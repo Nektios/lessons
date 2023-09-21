@@ -1,0 +1,31 @@
+header {
+    color:rgb(72, 0, 187);
+}
+#histori {
+    color: green;
+}
+div.text {
+    color: gray
+}
+.main__links * {
+    color: bisque;
+}
+[class*="__logo"] {
+    color: red;
+}
+.navigation__list a {
+    color: rgb(162, 92, 255);
+}
+.main__general-information, .main__photo-examples-leo {
+    color: rgb(255, 95, 220);
+}
+.footer__copyright > p {
+    color: saddlebrown;
+}
+.text ~ p {
+	color: rgb(129, 19, 139);
+}
+.navigation__list a {
+    color: salmon;
+}
+/* dfsdf */
