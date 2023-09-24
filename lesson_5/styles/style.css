@@ -1,0 +1,90 @@
+@import url(fonts.css);
+#wrapper {
+    font-family: ReoSansLight;
+    text-align: center;
+}
+#wrapper p {
+    font-size: 20px;
+}
+.navigation {
+    font-size: 25px;
+    font-family: QuintyRegular;
+    text-align: right;
+}
+.characteristics__title {
+    font-family: ReoSansBold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.designation__title {
+    font-family: ReoSansBold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.connection__title {
+    font-family: ReoSansBold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.characteristics__text {
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+}
+.footer__logo {
+    font-family: QuintyItalic;
+    font-size: 25px;
+    text-align: left;
+}
+.footer__authorship {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+
+
+
+
+.management {
+    text-align: left;
+    font-family: Poppins;
+}
+.management__title {
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.management__middle-text {
+    color: #6B77E5;
+    font-size: 20px;
+    font-weight: 600;
+}
+.management__upper-text {
+    font-family: Inter;
+    color: #7D7D7D;
+    font-size: 18px;
+}
+.management__lower-text {
+    font-family: Inter;
+    color: #7D7D7D;
+    font-size: 18px;
+}
+
+
+
+
+.project-information {
+    text-align: left;
+    color: #7D7D7D;
+    font-family: Inter;
+}
+.project-information__title {
+    color: black;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+}
