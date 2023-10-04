@@ -1,0 +1,157 @@
+@import url("fonts.css");
+
+
+
+.first-part-layout {
+    font-family: 'Inter', sans-serif;
+    color: #7D7D7D;
+    font-size: 18px;
+    max-width: 690px;
+    margin: 0 auto;
+}
+.first-part-layout__image {
+    margin-bottom: 20px;
+}
+.first-part-layout__upper-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.first-part-layout__upper-text {
+    margin-bottom: 40px;
+}
+.first-part-layout__lower-text h3 {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #6B77E5;
+    margin-bottom: 10px;
+}
+.first-part-layout__lower-text {
+    margin-bottom: 40px;
+}
+.first-part-layout__explanation {
+    display: flex; /* флексы я знаю просто и мне через них будет удобнее, чем через инлайн блок */
+    gap: 25px;
+}
+.first-part-layout__list-explanation h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #37393F;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.first-part-layout__list-explanation p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #40DDB6;
+    margin-bottom: 25px;
+}
+.first-part-layout__list-explanation ul {
+    display: flex; /* флексы я знаю просто и мне через них будет удобнее, чем через инлайн блок */
+    gap: 35px;
+    flex-direction: column;
+}
+.second-part-layout {
+    background: #FFF9F4;
+    padding: 20px;
+    margin-top: 40px;
+}
+.second-part-layout__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    color: #474747;
+}
+.second-part-layout__text h2 {
+    line-height: 80px;
+    font-size: 59px;
+    font-weight: 400;
+    font-family: 'DM Serif Text', sans-serif;
+    max-width: 500px;
+    margin: 25px 0px 25px 0px;
+    color: #0E333D;
+    
+}
+.second-part-layout__text--orange {
+    color: #D06B00;
+    font-size: 28px;
+}
+.second-part-layout__text--style {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 500px;
+    line-height: 36px;
+}
+.practice {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 17, 17);
+}
+.practice__first-block {
+    background-color: #ff9696;
+    padding: 20px;
+}
+.general-styles-first-block {
+    background-color: #4a4f5f;
+    width: 500px;
+}
+.practice__first-block1 {
+    margin-bottom: 10px;
+    padding: 20px 40px 10px 0px;
+}
+.practice__first-block2 {
+    margin-bottom: 10px;
+    padding: 20px 70px;
+}
+.practice__first-block3 {
+    margin-bottom: 10px;
+    padding: 20px 40px 0;
+}
+.practice__second-block {
+    background-color: #ffee90;
+    padding: 20px;
+}
+.general-styles-second-block {
+    background-color: #4a4f5f;
+    width: 500px;
+    display: inline-block;
+    padding: 10px;
+}
+.practice__third-block {
+    background-color: #e4a8ff;
+    padding: 20px;
+}
+.general-styles-third-block {
+    background-color: #4a4f5f;
+    width: 300px;
+    padding: 5px;
+    display: inline-block;
+}
+.practice__third-block1 {
+    height: 100px;
+    overflow: scroll;
+}
+.practice__fourth-block {
+    padding: 20px;
+    background-color: #a3e2ff;
+}
+.general-styles-fourth-block {
+    background-color: #4a4f5f;
+    width: 300px;
+    padding: 5px;
+    display: inline-block;
+}
+.practice__fourth-block1 {
+    display: none;
+}
+.practice__fourth-block2 {
+   height: 100px;
+}
+.practice__fourth-block3 {
+    margin: 20px;
+}
