@@ -1,0 +1,206 @@
+body, html {
+    height: 100vh;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,105,105);
+    background: linear-gradient(214deg, rgba(255,105,105,1) 0%, rgba(255,162,222,1) 25%, rgba(226,162,255,1) 50%, rgba(178,222,254,1) 75%, rgba(162,255,240,1) 100%);
+    overflow: hidden;
+  }
+  #wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+  }
+  .block1 {
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    order: 2;
+    z-index: 2;
+  }
+  .block_text {
+    width: 150px;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0px 2px black;
+    top: 30px;
+    left: 40px;
+    transition: 1s;
+  }
+  .block_text.active {
+    transition: 2s;
+    transform: translateY(-135px);
+  }
+  .block_text h1 {
+    margin: 0;
+  }
+  .block0 {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    z-index: -1;
+    width: 85px;
+    height: 180px;
+    background-color: rgb(82, 82, 82);
+    transform: skewY(-30deg);
+    order: 1;
+  }
+  .block1_1 {
+    width: 20px;
+    height: 100%;
+    background-color: rgb(255, 97, 97);
+  }
+  .block2 {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    left: 175px;
+    width: 85px;
+    height: 180px;
+    background-color: rgb(230, 230, 230);
+    transform: skewY(-30deg);
+    order: 1;
+    z-index: 2;
+  }
+  .block2_2 {
+    width: 20px;
+    height: 100%;
+    background-color: rgb(230, 97, 97);
+  }
+  .block3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(219, 219, 219);
+    right: -44px;
+    transform: skewX(-60deg);
+    bottom: 180px;
+    width: 177px;
+    height: 50px;
+    order: 3;
+    transition: 1s;
+  }
+  .block3_3 {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: rgb(219, 97, 97);
+  }
+  .block3_4 {
+    width: 100%;
+    height: 12px;
+    background-color: rgb(219, 97, 97);
+  }
+  .block3_img {
+    bottom: -35px;
+    right: 25px;
+    z-index: 1;
+    position: absolute;
+    transform: skewX(60deg) rotate(15deg);
+    max-width: 100%;
+    height: 100px;
+  }
+  .block3.active {
+    transition: 1s;
+    transform: translateY(-150px) skewX(-60deg);
+  }
+  .block4 {
+    position: absolute;
+    background-color: rgb(112, 112, 112);
+    right: -43px;
+    transform: skewX(-60deg);
+    bottom: 180px;
+    z-index: -2;
+    width: 175px;
+    height: 50px;
+    order: 3;
+  }
+  .block6 {
+    left: 0px;
+    top: 0px;
+    width: 175px;
+    position: absolute;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    transition: 1s;
+  }
+  .block6.active {
+    transition: 1s;
+    transform: translateY(-150px);
+  }
+  .block7 {
+    position: absolute;
+    bottom: 184px;
+    left: 174px;
+    width: 85px;
+    height: 20px;
+    background-color: rgb(230, 230, 230);
+    transform: skewY(-30deg);
+    z-index: 1;
+    transition: 1s;
+  }
+  .block7.active {
+    transition: 1s;
+    transform: translateY(-150px) skewY(-30deg);
+  }
+  @function random_range($min, $max) {
+    $rand: random();
+    $random_range: $min + floor($rand * (($max - $min) + 1));
+    @return $random_range;
+  }
+  .sneg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+  }
+  .snow {
+    $total: 200;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  
+    @for $i from 1 through $total {
+      $random-x: random(1000000) * 0.0001vw;
+      $random-offset: random_range(-100000, 100000) * 0.0001vw;
+      $random-x-end: $random-x + $random-offset;
+      $random-x-end-yoyo: $random-x + ($random-offset / 2);
+      $random-yoyo-time: random_range(30000, 80000) / 100000;
+      $random-yoyo-y: $random-yoyo-time * 100vh;
+      $random-scale: random(10000) * 0.0001;
+      $fall-duration: random_range(10, 30) * 1s;
+      $fall-delay: random(30) * -1s;
+  
+      &:nth-child(#{$i}) {
+        opacity: random(10000) * 0.0001;
+        transform: translate($random-x, -10px) scale($random-scale);
+        animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+      }
+  
+      @keyframes fall-#{$i} {
+        #{percentage($random-yoyo-time)} {
+          transform: translate($random-x-end, $random-yoyo-y) scale($random-scale);
+        }
+  
+        to {
+          transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
+        }
+      }
+    }
+  }
+  
