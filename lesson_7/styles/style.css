@@ -1,0 +1,222 @@
+@import url("fonts.css");
+
+.licencing {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.licencing__upper {
+    margin-bottom: 100px;
+}
+.licencing__upper h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.licencing__upper p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #7D7D7D;
+    margin-bottom: 30px;
+}
+.licencing__upper h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #37393F;
+}
+.licencing__upper--green {
+    color: #40DDB6;
+    font-weight: 400;
+}
+.licencing__photo {
+    margin-bottom: 25px;
+}
+.licencing__photo h2 {
+    color: #37393F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.licencing__photo p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #7D7D7D;
+}
+.licencing__pexels {
+    margin-bottom: 25px;
+}
+.licencing__pexels h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.licencing__pexels p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #40DDB6;
+}
+.licencing__pexels--green {
+    color: #40DDB6;
+    font-weight: 400;
+}
+.licencing__unsplash h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.licencing__unsplash p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #40DDB6;
+}
+.licencing__unsplash--green {
+    color: #40DDB6;
+    font-weight: 400;
+}
+.licencing__middle {
+    margin-bottom: 100px;
+}
+.licencing__lower h2 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.licencing__lower p {
+    color: #7D7D7D;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.licencing__lower--green {
+    color: #40DDB6;
+    font-weight: 500;
+    
+}
+.project-information {
+    max-width: 830px;
+    margin: 0 auto;
+    color: #7D7D7D;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+.project-information__upper h2 {
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 15px;
+}
+.project-information__upper {
+    margin-bottom: 25px;
+}
+.project-information__middle p {
+    margin-bottom: 35px;
+}
+.project-information__middle ul li {
+    list-style: inside;
+    margin-bottom: 35px;
+    margin-left: 36px;
+}
+.project-information__middle ol li {
+    list-style: decimal;
+    margin-bottom: 35px;
+    margin-left: 56px;
+}
+.clothing-for-india {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.test {
+    width: 6px;
+    height: 23px;
+    border-radius: 10px;
+    background: #8A33FD;
+    display: inline-block;
+    margin-right: 15px;
+}
+.clothing-for-india p {
+    font-family: 'CaustenRegular', sans-serif;
+    color: #807D7E;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+}
+.clothing-for-india h3 {
+    font-family: 'CoreSansCBold', sans-serif;
+    font-size: 28px;
+    color: #3C4242;
+    margin-bottom: 30px;
+}
+
+.clothing-for-india h4 {
+    font-size: 20px;
+    font-family: 'CoreSansCBold', sans-serif;
+    color: #807D7E;
+}
+.clothing-for-india--bold {
+    font-family: 'CaustenBold', sans-serif;
+}
+.development-of-jewelry {
+    font-family: 'Cormorant Infant', sans-serif;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.development-of-jewelry__left {
+    max-width: 500px;
+}
+.development-of-jewelry__left h4 {
+    color: #D58417;
+    font-weight: 600;
+    font-size: 20px;
+}
+.development-of-jewelry__left h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #000;
+    margin: 30px 0px 30px 0px;
+}
+.development-of-jewelry__left p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #606060;
+}
+.development-of-jewelry__right-first-woman {
+    border-radius: 235px;
+    border: 1px solid #502203;
+    max-width: 177px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.development-of-jewelry__right-first-woman img {
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+.development-of-jewelry__right-second-woman {
+    border-radius: 235px;
+    border: 1px solid #502203;
+    max-width: 308px;
+    display: inline-block;
+}
+.development-of-jewelry__right-second-woman img {
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
