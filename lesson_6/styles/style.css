@@ -68,12 +68,14 @@
     font-family: 'Inter', sans-serif;
     color: #474747;
 }
+.second-part-layout__text {
+    max-width: 500px;
+}
 .second-part-layout__text h2 {
     line-height: 80px;
     font-size: 59px;
     font-weight: 400;
     font-family: 'DM Serif Text', sans-serif;
-    max-width: 500px;
     margin: 25px 0px 25px 0px;
     color: #0E333D;
     
@@ -85,7 +87,6 @@
 .second-part-layout__text--style {
     font-size: 20px;
     font-weight: 400;
-    max-width: 500px;
     line-height: 36px;
 }
 .practice {
