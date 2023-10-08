@@ -1,0 +1,289 @@
+@import url("fonts.css");
+
+.licencing {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.licencing__upper {
+    margin-bottom: 100px;
+}
+.licencing__upper h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.licencing__upper p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #7D7D7D;
+    margin-bottom: 30px;
+}
+.licencing__upper h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #37393F;
+}
+.licencing__upper--green {
+    color: #40DDB6;
+    font-weight: 400;
+}
+.licencing__photo {
+    margin-bottom: 25px;
+}
+.licencing__photo h2 {
+    color: #37393F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.licencing__photo p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #7D7D7D;
+}
+.licencing__pexels {
+    margin-bottom: 25px;
+}
+.licencing__pexels h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.licencing__pexels p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #40DDB6;
+}
+.licencing__pexels--green {
+    color: #40DDB6;
+    font-weight: 400;
+}
+.licencing__unsplash h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.licencing__unsplash p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #40DDB6;
+}
+.licencing__unsplash--green {
+    color: #40DDB6;
+    font-weight: 400;
+}
+.licencing__middle {
+    margin-bottom: 100px;
+}
+.licencing__lower h2 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 10px;
+}
+.licencing__lower p {
+    color: #7D7D7D;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.licencing__lower--green {
+    color: #40DDB6;
+    font-weight: 500;
+    
+}
+.project-information {
+    max-width: 830px;
+    margin: 0 auto;
+    color: #7D7D7D;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+.project-information__upper h2 {
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 15px;
+}
+.project-information__upper {
+    margin-bottom: 25px;
+}
+.project-information__middle p {
+    margin-bottom: 35px;
+}
+.project-information__middle ul li {
+    list-style: inside;
+    margin-bottom: 35px;
+    margin-left: 36px;
+}
+.project-information__middle ol li {
+    list-style: decimal;
+    margin-bottom: 35px;
+    margin-left: 56px;
+}
+.clothing-for-india {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.test {
+    width: 6px;
+    height: 22px;
+    border-radius: 10px;
+    background: #8A33FD;
+    display: inline-block;
+    margin-right: 15px;
+}
+.clothing-for-india p {
+    font-family: 'CaustenRegular', sans-serif;
+    color: #807D7E;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+}
+.clothing-for-india h3 {
+    font-family: 'CoreSansCBold', sans-serif;
+    font-size: 28px;
+    color: #3C4242;
+    margin-bottom: 30px;
+}
+
+.clothing-for-india h4 {
+    font-size: 20px;
+    font-family: 'CoreSansCBold', sans-serif;
+    color: #807D7E;
+}
+.clothing-for-india a {
+    font-size: 20px;
+    font-family: 'CoreSansCBold', sans-serif;
+    color: #807D7E;
+}
+.clothing-for-india--bold {
+    font-family: 'CaustenBold', sans-serif;
+}
+.development-of-jewelry {
+    font-family: 'Cormorant Infant', sans-serif;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.development-of-jewelry__left {
+    max-width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 75px;
+}
+.development-of-jewelry__left h4 {
+    color: #D58417;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 27px;
+}
+.development-of-jewelry__left h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+.development-of-jewelry__left p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #606060;
+}
+.development-of-jewelry__right {
+    display: inline-block;
+    vertical-align: middle;
+}
+.development-of-jewelry__right-first-woman {
+    border-radius: 235px;
+    border: 1px solid #502203;
+    width: 177px;
+    height: 336px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.development-of-jewelry__right-first-woman img {
+    padding-top: 10px;
+    margin-left: -10px;
+}
+.development-of-jewelry__right-second-woman {
+    border-radius: 235px;
+    border: 1px solid #502203;
+    vertical-align: middle;
+    width: 307px;
+    height: 500px;
+    display: inline-block;
+}
+.development-of-jewelry__right-second-woman img {
+    padding-top: 10px;
+    margin-left: -10px;
+}
+.practice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    background: rgb(255,229,254);
+    background: linear-gradient(90deg, rgba(255,229,254,1) 0%, rgba(215,228,255,1) 100%);
+}
+.practice__first {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.general-styles {
+    padding: 10px 40px 10px 40px;
+    margin: 10px;
+    display: inline-block;
+}
+.block1 {
+    border: 2px solid rgb(46, 46, 46);
+}
+.block2 {
+    border: 2px dashed rgb(46, 46, 46);
+}
+.block3 {
+    border: 2px dotted rgb(46, 46, 46);
+}
+.block4 {
+    border: 5px double rgb(46, 46, 46);
+}
+
+
+.block5 {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    border-bottom: 4px solid black;
+    border-right: 4px dashed black;
+    border-left: 4px double black;
+    border-top: 4px dotted black;
+    margin-bottom: 20px;
+}
+.block6 {
+    color: white;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+    background: rgb(255,161,161);
+    background: linear-gradient(90deg, rgba(255,161,161,1) 0%, rgba(77,71,255,1) 100%);
+    box-shadow: 0px 0px 30px rgba(48, 48, 48, 0.548);
+}
+.block7 {
+    visibility: hidden;
+    max-width: 500px;
+}
+.block8 {
+    opacity: 0.2;
+    max-width: 500px;
+}
