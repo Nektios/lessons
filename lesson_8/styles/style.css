@@ -172,7 +172,6 @@
     max-width: 800px;
 }
 .general-styles-for-column-photos {
-    width: 350px;
     display: inline-block;
     margin: 10px;
 }
@@ -190,7 +189,7 @@
     color: #7D7D7D;
 }
 .bck-general-styles {
-    width: 100%;
+    width: 350px;
     height: 500px;
     margin-bottom: 25px;
 }
