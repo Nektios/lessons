@@ -330,6 +330,7 @@
     padding: 10px 45px;
     background-color: #FFF;
     border-radius: 8px;
+    display: inline-block;
 }
 .section-with-practice {
     background: rgb(255,161,161);
