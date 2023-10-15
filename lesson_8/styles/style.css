@@ -194,21 +194,33 @@
 
 .column-photos__first-bck {
     background-image: url('../images/photo1.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .column-photos__second-bck {
     background-image: url('../images/photo2.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .column-photos__third-bck {
     background-image: url('../images/photo3.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .column-photos__fourth-bck {
     background-image: url('../images/photo4.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .column-photos__fifth-bck {
     background-image: url('../images/photo5.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .column-photos__sixth-bck {
     background-image: url('../images/photo6.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .column-photos__icon {
     vertical-align: middle;
