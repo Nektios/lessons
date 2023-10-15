@@ -283,7 +283,6 @@
 
 .fourth-section__container {
     max-width: 1260px;
-    height: 640px;
     margin: 0 auto;
 }
 .fourth-section__image {
@@ -291,9 +290,10 @@
     display: inline-block;
     width: 100%;
     max-width: 630px;
-    height: 100%;
+    height: 640px;
     background-image: url('../images/image.jpg');
     background-size: cover;
+    background-position: center;
 }
 .fourth-section__title {
     color: #FFF;
@@ -301,9 +301,10 @@
     vertical-align: top;
     display: inline-block;
     max-width: 630px;
-    height: 100%;
+    height: 640px;
     background-image: url('../images/unsplash-b-biu-sdck-8-tu.jpg');
     background-size: cover;
+    background-position: center;
     padding: 180px 75px 180px 75px;
 }
 
