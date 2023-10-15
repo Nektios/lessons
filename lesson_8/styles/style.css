@@ -106,9 +106,6 @@
     vertical-align: top;
     margin-right: 20px;
 }
-.second-block-with-achievements__right {
-    display: inline-block;
-}
 .second-block-with-achievements__right h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -172,6 +169,7 @@
     max-width: 800px;
 }
 .general-styles-for-column-photos {
+    width: 350px;
     display: inline-block;
     margin: 10px;
 }
@@ -189,7 +187,7 @@
     color: #7D7D7D;
 }
 .bck-general-styles {
-    width: 350px;
+    width: 100%;
     height: 500px;
     margin-bottom: 25px;
 }
