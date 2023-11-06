@@ -1,0 +1,285 @@
+.main {
+    background-color: rgb(255, 255, 255);
+}
+.explanation {
+    background: rgb(255,209,209);
+    background: -moz-linear-gradient(90deg, rgba(255,209,209,1) 0%, rgba(212,244,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,209,209,1) 0%, rgba(212,244,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,209,209,1) 0%, rgba(212,244,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd1d1",endColorstr="#d4f4ff",GradientType=1);
+}
+.explanation__container {
+    @include container (flex);
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding: 0px 10px 0px 10px;
+}
+.explanation__title { 
+    flex-basis: 600px;
+    text-align: center;
+    h2 {
+        @extend %font-title;
+        font-size: 40px;
+        margin: 0px 0px 20px 0px;
+    }
+    p {
+        margin: 0;
+        font-size: 24px;
+        @extend %font-other;
+    }
+}
+
+
+
+
+
+
+
+.learn-more-1,.learn-more-2,.learn-more-3 {
+    @extend %services-button;
+    @extend %button-learn-more;
+}
+
+
+
+
+.services__container {
+    @include container (flex);
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
+.services__title {
+    text-align: center;
+    @extend %font-title;
+    h2 {
+        font-size: 40px;
+        margin: 40px 0px 40px 0px;
+    }
+}
+.learn-more {
+    @extend %services-button;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgb(128, 80, 80);
+        transition: 0.1s;
+    }
+}
+.services__prices {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0px 40px 0px;
+}
+.service__general-styles {
+    width: 350px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px  rgba(0, 0, 0, 0.308);
+}
+.tattoo {
+    background-image: url('../images/other-images/tato.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.tatto__title {
+    text-align: center;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 0px 0px 10px 10px;
+    h3 {
+        margin: 15px 0px 15px 0px;
+        font-size: 30px;
+        @extend %font-title;
+    }
+    p {
+        margin: 0px 0px 15px 0px;
+        font-size: 22px;
+        @extend %font-other;
+    }
+}
+.removal {
+    background-image: url('../images/other-images/del.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.removal__title {
+    text-align: center;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 0px 0px 10px 10px;
+    h3 {
+        margin: 15px 0px 15px 0px;
+        font-size: 30px;
+        @extend %font-title;
+    }
+    p {
+        margin: 0px 0px 15px 0px;
+        font-size: 22px;
+        @extend %font-other;
+    }
+}
+.sketches {
+    background-image: url('../images/other-images/eskiz.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.sketches__title {
+    text-align: center;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 0px 0px 10px 10px;
+    h3 {
+        margin: 15px 0px 15px 0px;
+        font-size: 30px;
+        @extend %font-title;
+    }
+    p {
+        margin: 0px 0px 15px 0px;
+        font-size: 22px;
+        @extend %font-other;
+    }
+}
+.removal__image {
+    img {
+        max-width: 100%;
+        height: 230px;
+        border-radius: 10px;
+    }
+}
+.image-tattoo {
+    background-color: $bckgr-grey1;
+}
+.image-tattoos__container {
+    @include container (flex);
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
+.image-tattoos__title {
+    text-align: center;
+    color: white;
+    @extend %font-title;
+    h2 {
+        font-size: 40px;
+    }
+}
+.image-tattoos__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+}
+.general-styles-tattoo {
+    max-width: 450px;
+    background-color: rgb(255, 255, 255);
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+.image-tattos__button {
+    margin: 40px 0px 40px 0px;
+    text-align: center;
+    a {
+        @extend %work-images-button;
+    }
+}
+
+.image-corrections {
+    background-color: $bckgr-grey2;
+}
+
+.image-corrections__container {
+    @include container (flex);
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
+.image-corrections__title {
+    text-align: center;
+    color: white;
+    @extend %font-title;
+    h2 {
+        font-size: 40px;
+    }
+}
+
+.image-corrections__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.general-styles-corrections {
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.image-corrections__button {
+    margin: 40px 0px 40px 0px;
+    text-align: center;
+    a {
+        @extend %work-images-button;
+    }
+}
+
+.image-sketches {
+    background-color: $bckgr-grey3;
+}
+
+.image-sketches__container {
+    @include container (flex);
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+
+}
+.image-sketches__title {
+    text-align: center;
+    color: white;
+    @extend %font-title;
+    h2 {
+        font-size: 40px;
+    }
+}
+.general-styles-sketches {
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.image-sketches__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.image-sketches__button {
+    margin: 40px 0px 40px 0px;
+    text-align: center;
+    a {
+        @extend %work-images-button;
+    }
+}
+
+
+
+
+
+

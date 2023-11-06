@@ -1,0 +1,86 @@
+// <============================Mixins-and-premium===========================> 
+
+// background colors for blocks with examples of photos
+$bckgr-grey1: rgba(45, 45, 45, 1);
+$bckgr-grey2: rgba(35, 35, 35, 1);
+$bckgr-grey3: rgba(26, 26, 26, 1);
+
+// colors for buttons
+$button-color-price: black;
+$button-color-title: rgba(255, 89, 89, 1);
+$button-color-images: rgba(123, 52, 52, 1);
+
+
+// convenient font connection
+%font-title {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+}
+%font-other {
+    font-family: 'Roboto Flex', sans-serif;
+}
+%font-logo {
+    font-family: 'Kodchasan', sans-serif;
+}
+%font-inst {
+    font-family: 'Lobster', sans-serif;
+}
+
+// services generals styles
+%services-button {
+    margin: 0px 0px 15px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    @extend %font-other;
+    border: none;
+}
+
+// images work button 
+
+%work-images-button {
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    background-color: $button-color-images;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    @extend %font-other;
+}
+
+%button-learn-more {
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgb(128, 80, 80);
+        transition: 0.1s;
+    }
+}
+
+
+// simplification of spelling of styles for the container
+@mixin container ($display) {
+    display: $display;
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+// <=========================================================================> 
+
+
+
+
+
+
+// <============================separately-connected-blocks===========================> 
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'fonts';
+@import 'pop-up-window';
+@import 'break-points';
+@import 'animation';
+// <==================================================================================> 
