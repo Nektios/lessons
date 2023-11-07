@@ -1,0 +1,121 @@
+// =================================
+.tattoo {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.tatto--visible {
+    opacity: 1;
+}
+// =================================
+
+
+// =================================
+.removal {
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+}
+.removal--visible {
+    opacity: 1;
+}
+// =================================
+
+
+// =================================
+.sketches {
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+
+.sketches--visible {
+    opacity: 1;
+}
+// =================================
+
+
+// =================================
+.image-tattoos__fourth-image {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.image-tattoos__fourth-image--visible {
+    opacity: 1;
+}
+
+.image-tattoos__third-image {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.image-tattoos__third-image--visible {
+    opacity: 1;
+}
+
+.image-tattoos__second-image {
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+}
+.image-tattoos__second-image--visible {
+    opacity: 1;
+}
+
+.image-tattoos__first-image {
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+.image-tattoos__first-image--visible {
+    opacity: 1;
+}
+// =================================
+
+
+// =================================
+.image-corrections__third-image {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.image-corrections__third-image--visible {
+    opacity: 1;
+}
+
+.image-corrections__first-image {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.image-corrections__first-image--visible {
+    opacity: 1;
+}
+
+.image-corrections__fouth-image {
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+}
+.image-corrections__fouth-image--visible {
+    opacity: 1;
+}
+
+.image-corrections__second-image {
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+.image-corrections__second-image--visible {
+    opacity: 1;
+}
+
+.image-corrections__fifth-image {
+    opacity: 0;
+    transition: 2.5s ease-in-out;
+}
+.image-corrections__fifth-image--visible {
+    opacity: 1;
+}
+// =================================
+
+
+// =================================
+.image-sketches__list {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.image-sketches__list--visible {
+    opacity: 1;
+}
+// =================================

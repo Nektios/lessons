@@ -1,0 +1,495 @@
+.pop-up-window-tattoo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+.pop-up-window-tattoo__center {
+    display: flex;
+    max-width: 800px;
+    margin: 0px 20px 0px 20px;
+}
+
+.pop-up-window-tattoo__title {
+    flex-basis: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px 60px 20px;
+}
+
+.pop-up-window-tattoo__text {
+    @extend %font-other;
+    h2 {
+        @extend %font-title;
+        font-size: 40px;
+        margin: 0px 0px 10px 0px;
+    }
+    p {
+        color: rgb(102, 102, 102);
+        margin: 0;
+        font-size: 18px;
+    }
+    span {
+        font-weight: bold;
+    }
+    h3 {
+        color: rgb(0, 0, 0);
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+.pop-up-window-tattoo__images {
+    flex-basis: 50%;
+    border-radius: 0px 20px 20px 0px;
+    background-image: url('../images/other-images/tato.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 20px;
+        cursor: pointer;
+    }
+}
+.pop-up-window-tattoo__button-instagram {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+    font-size: 18px;
+    @extend %font-inst;
+}
+.pop-up-window-tattoo__contact-information {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    @extend %font-other;
+}
+.pop-up-window-tattoo__button-number {
+    background-color: rgb(49, 49, 49);
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+    font-size: 18px;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        transition: 0.3s;
+    }
+}
+
+
+
+
+
+.pop-up-window-removal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+.pop-up-window-removal__center {
+    display: flex;
+    max-width: 800px;
+    margin: 0px 20px 0px 20px;
+}
+.pop-up-window-removal__title {
+    flex-basis: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px 60px 20px;
+}
+.pop-up-window-removal__text {
+    @extend %font-other;
+    h2 {
+        @extend %font-title;
+        font-size: 40px;
+        margin: 0px 0px 10px 0px;
+    }
+    p {
+        color: rgb(102, 102, 102);
+        margin: 0;
+        font-size: 18px;
+    }
+    span {
+        font-weight: bold;
+    }
+    h3 {
+        color: rgb(0, 0, 0);
+        margin: 20px 0px 0px 0px;
+    }
+}
+.pop-up-window-removal__contact-information {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    @extend %font-other;
+    
+}
+.pop-up-window-tattoo__button-instagram {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+    font-size: 18px;
+    @extend %font-inst;
+}
+.pop-up-window-tattoo__button-number {
+    background-color: rgb(49, 49, 49);
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+    font-size: 18px;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        transition: 0.3s;
+    }
+}
+.pop-up-window-removal__images {
+    flex-basis: 50%;
+    border-radius: 0px 20px 20px 0px;
+    background-image: url('../images/other-images/del.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 20px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pop-up-window-sketches {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+.pop-up-window-sketches__center {
+    display: flex;
+    max-width: 800px;
+    margin: 0px 20px 0px 20px;
+}
+.pop-up-window-sketches__title {
+    flex-basis: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px 60px 20px;
+}
+.pop-up-window-sketches__text {
+    @extend %font-other;
+    h2 {
+        @extend %font-title;
+        font-size: 40px;
+        margin: 0px 0px 10px 0px;
+    }
+    p {
+        color: rgb(102, 102, 102);
+        margin: 0;
+        font-size: 18px;
+    }
+    span {
+        font-weight: bold;
+    }
+    h3 {
+        color: rgb(0, 0, 0);
+        margin: 20px 0px 0px 0px;
+    }
+}
+.pop-up-window-sketches__contact-information {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    @extend %font-other;
+}
+.pop-up-window-sketches__button-instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+    font-size: 18px;
+    @extend %font-inst;
+}
+
+
+
+
+.pop-up-window-sketches__button-number {
+    background-color: rgb(49, 49, 49);
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+    font-size: 18px;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        transition: 0.3s;
+    }
+}
+.pop-up-window-sketches__images {
+    flex-basis: 50%;
+    border-radius: 0px 20px 20px 0px;
+    background-image: url('../images/other-images/eskiz.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 20px;
+        cursor: pointer;
+    }
+}
+
+
+
+.pop-up-window-images-tattoo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+.pop-up-window-images-tattoo__center {
+    flex-basis: 800px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0px 20px 0px 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.596);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.pop-up-window-images-tattoo__list {
+    flex-grow: 1;
+    overflow: scroll;
+    overflow-x:hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+    gap: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    img {
+        max-width: 100%;
+        height: 250px;
+        display: block;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.295);
+    }
+}
+.pop-up-window-images-tattoo__exit {
+    text-align: center;
+}
+
+.pop-up-window-images-tattoo__button {
+    margin-top: 30px;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    @extend %font-inst;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.pop-up-window-images-corrections {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+.pop-up-window-images-corrections__center {
+    flex-basis: 800px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0px 20px 0px 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.596);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.pop-up-window-images-corrections__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    h2 {
+        @extend %font-title;
+    }
+}
+.pop-up-window-images-corrections__exit {
+    text-align: center;
+}
+.pop-up-window-images-corrections__button {
+    margin-top: 30px;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    @extend %font-inst;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.pop-up-window-images-sketches {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+.pop-up-window-images-sketches__center {
+    flex-basis: 800px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0px 20px 0px 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.596);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.pop-up-window-images-sketches__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    h2 {
+        @extend %font-title;
+    }
+}
+.pop-up-window-images-sketches__exit {
+    text-align: center;
+}
+.pop-up-window-images-sketches__button {
+    margin-top: 30px;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    @extend %font-inst;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
