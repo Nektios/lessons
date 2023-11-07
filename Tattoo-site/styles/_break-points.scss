@@ -89,8 +89,8 @@
         position: absolute;
         left: 0;
         width: 100%;
-        top: -1000%;
-        height: 50vh;
+        top: -1000px;
+        height: 70vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -98,10 +98,18 @@
         transition-duration: 1s;
         z-index: -1;
     }
+
+
     .active {
         top: 70px;
         transition-duration: 1s;
     }
+    .inactive {
+        top: -1000px;
+        transition-duration: 1s;
+    }
+
+
     .animation-effect-1 {
         background-color: aqua;
     }
