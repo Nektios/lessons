@@ -76,10 +76,10 @@ $button-color-images: rgba(123, 52, 52, 1);
 
 
 // <============================separately-connected-blocks===========================> 
+@import 'fonts';
 @import 'header';
 @import 'main';
 @import 'footer';
-@import 'fonts';
 @import 'pop-up-window';
 @import 'break-points';
 @import 'animation';

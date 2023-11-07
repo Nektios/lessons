@@ -189,10 +189,18 @@
 .image-tattos__button {
     margin: 40px 0px 40px 0px;
     text-align: center;
-    a {
-        @extend %work-images-button;
+}
+
+.image-tattos__button-style,.image-corrections__button-style,.image-sketches__button-style {
+    @extend %work-images-button;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: rgb(77, 32, 32);
     }
 }
+
 
 .image-corrections {
     background-color: $bckgr-grey2;
