@@ -1,0 +1,62 @@
+body {
+    background: rgb(255,218,48);
+    background: linear-gradient(90deg, rgba(255,218,48,1) 0%, rgba(243,107,255,1) 50%, rgba(66,216,255,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+    padding: 20px;
+}
+.overflow-images__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.vector-styles {
+    background-color: rgba(255, 255, 255, 0.199);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.445);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 25px;
+    width: 450px;
+    img {
+        max-width: 80px;
+        height: 80px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    >* {
+        display: inline-block;
+        font-size: 0;
+    }
+    p {
+        font-weight: bold;
+        font-size: 16px;
+        vertical-align: middle;
+    }
+}
+.overflow-images__vector-item-19 {
+    display: block;
+    width: auto;
+    text-align: center;
+}
+.overflow-images__rastric-item-1, .overflow-images__rastric-item-2, .overflow-images__rastric-item-3 {
+    background-color: rgba(255, 255, 255, 0.199);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.445);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 25px;
+    width: 450px;
+    text-align: center;
+    p {
+        font-weight: bold;
+        font-size: 16px;
+
+    }
+    img {
+        width: 300px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,619 @@
+@import url('font.css');
+
+// однотипные стили для блков, текста
+%p-styles {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #7D7D7D;
+    line-height: 26px;
+}
+%h2-styles {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #37393F;
+    line-height: 38px;
+}
+
+// ===  стили для first-section ===
+.first-section {
+    max-width: 690px;
+    margin: 0 auto;
+    & > :not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+.first-section__title {
+    h2 {
+        @extend %h2-styles;
+    }
+    p {
+        @extend %p-styles;
+    }
+    & > :not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+.first-section__subtitle {
+    h4 {
+        color: #6B77E5;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    p {
+        @extend %p-styles;
+    }
+}
+.first-section__features {
+    font-size: 0;
+}
+.first-section__image {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.first-section__list {
+    display: inline-block;
+    vertical-align: top;
+    &> :not(:last-child) {
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: #37393F;
+        line-height: 31px;
+    }
+    p {
+        font-size: 20px;
+        color: #40DDB6;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        line-height: 25px;
+    }
+    ul {
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        color: #7D7D7D;
+        li::before {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-image: url('../images/vector.png');
+            background-size: cover;
+            background-position: center;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        &> :not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+}
+.first-section__text {
+    h2 {
+        @extend %h2-styles;
+    }
+    p {
+        @extend %p-styles;
+    }
+    & > :not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+// === конец first-section ===
+
+
+
+
+
+// ===  стили для second-section ===
+.second-section {
+    margin: 0 auto;
+    max-width: 670px;
+    & > :not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+.second-section__title {
+    & > :not(:last-child) {
+        margin-bottom: 15px;
+    }
+    h6 {
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: #37393F;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #40DDB6;
+            margin-right: 6px;
+        }
+    }
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #7D7D7D;
+    }
+}
+.second-section__list {
+    & > :not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+.second-section__items-one, .second-section__items-two {
+    padding: 30px 40px 40px 40px;
+    border: 1px solid #E3E3E3;
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #37393F;
+        margin-bottom: 10px;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-image: url('../images/vector.png');
+            background-size: cover;
+            background-position: center;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+    }
+    p {
+        margin-left: 46px;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #7D7D7D;
+    }
+}
+
+.second-section__button {
+    a {
+        display: inline-block;
+        padding: 20px 35px 20px 35px;
+        background-color: #6B77E5;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        color: #FFF;
+        &:hover {
+            background-color: #2d3997;
+        }
+    }
+}
+// === конец second-section ===
+
+
+
+
+
+
+// === начало стилей third-section ===
+
+.third-section {
+    max-width: 1220px;
+    margin: 0 auto;
+    & > :not(:last-child) {
+        margin-bottom: 70px;
+    }
+}
+.third-section__title {
+    text-align: center;
+    & > :not(:last-child) {
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        font-family: 'Poppins', sans-serif;
+    }
+    h6 {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #37393F;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #40DDB6;
+            margin-right: 5px;
+        }
+    }
+}
+.third-section__list {
+    font-size: 0;
+    & > :not(:last-child) {
+        margin-right: 40px;
+    }
+}
+.third-section__item-one, .third-section__item-two, .third-section__item-three {
+    display: inline-block;
+    padding: 60px 45px;
+    background-color: #F4F4F4;
+    text-align: center;
+    max-width: 380px;
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #37393F;
+        margin-bottom: 15px;
+    }
+    p {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #7D7D7D;
+        margin-bottom: 35px;
+    }
+    a {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        color: #6B77E5;
+        font-weight: 600;
+    }
+    &:hover {
+        background-color: #dddddd;
+    }
+}
+.third-section__item-one {
+    &::before {
+        content: '';
+        display: block;
+        width: 72px;
+        height: 72px;
+        background-image: url('../images/icon1.png');
+        background-position: center;
+        background-size: cover;
+        margin: -100px auto 30px;
+    }
+}
+.third-section__item-two {
+    &::before {
+        content: '';
+        display: block;
+        width: 72px;
+        height: 72px;
+        background-image: url('../images/icon2.png');
+        background-position: center;
+        background-size: cover;
+        margin: -100px auto 30px;
+    }
+}
+.third-section__item-three {
+    &::before {
+        content: '';
+        display: block;
+        width: 72px;
+        height: 72px;
+        background-image: url('../images/icon3.png');
+        background-position: center;
+        background-size: cover;
+        margin: -100px auto 30px;
+    }
+}
+
+// === конец third-section ===
+
+
+
+// === начало стилей fourth-section ===
+
+.fourth-section {
+    width: 100%;
+}
+.fourth-section__container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.fourth-section__title {
+    max-width: 500px;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    h2 {
+        font-family: Cormorant Infant;
+        font-size: 60px;
+        font-weight: 700;
+        &::after {
+            content: "";
+            display: block;
+            width: 60%;
+            height: 3px;
+            background-color: #78473B;
+            margin-top: 10px;
+        }
+    }
+}
+.fourth-section__conten {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    & > :not(:last-child) {
+        margin-right: 55px;
+    }
+}
+
+
+.fourth-section__gallery-description-first-item, .fourth-section__gallery-description-second-item {
+    
+    & > :not(:last-child) {
+        margin-bottom: 30px;
+    }
+    max-width: 330px;
+    display: inline-block;
+    font-size: 0;
+    p {
+        font-size: 24px;
+        font-family: Cormorant Infant;
+        font-weight: 700;
+        line-height: 33px;
+    }
+}
+.fourth-section__gallery-description-first-item {
+    vertical-align: top;
+}
+.fourth-section__gallery-description-second-item {
+    h3 {
+        font-size: 46px;
+        font-family: 'Cormorant Infant', serif;
+        font-weight: 700;
+        line-height: 50px;
+    }
+}
+
+
+
+
+.fourth-section__gallery-description-first-item-image, .fourth-section__gallery-description-second-item-image {
+    border: 1px solid #000;
+    height: 380px;
+    img {
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+// === конец fourth-section ===
+
+.fifth-section {
+    background: rgb(48,255,169);
+    background: linear-gradient(90deg, rgb(104, 255, 192) 0%, rgb(189, 147, 255) 50%, rgb(102, 97, 255) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fifth-section__container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.general-styles {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.342);
+}
+.fifth-section__item-1 {
+    &:hover {
+        background-color: rgb(103, 225, 255);
+    }
+}
+.fifth-section__item-2 {
+    cursor: pointer;
+    &:active {
+        background-color: rgb(169, 103, 255);
+    }
+}
+.fifth-section__item-3 {
+    a {
+        display: inline-block;
+        &:focus {
+            background-color: rgb(255, 103, 174);
+            border: 1px solid black;
+        }
+    }
+}
+
+.fifth-section__item-4 {
+    a {
+        display: inline-block;
+        &:visited {
+            color: rgb(255, 100, 100);
+        }
+    }
+}
+
+.block {
+    margin-top: 10px;
+    &:target {
+        width: 500px;
+        height: 500px;
+        background-color: #8793ff;
+        border-radius: 10px;
+    }
+}
+
+.fifth-section__item-6 {
+    > :first-child {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+.fifth-section__item-7 {
+    > :last-child {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+.fifth-section__item-8 {
+    > :last-of-type {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+.fifth-section__item-9 {
+    > :first-of-type {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+
+.fifth-section__item-10 {
+    > :nth-child(2) {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+.fifth-section__item-11 {
+    > :nth-child(odd) {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+.fifth-section__item-12 {
+    > :nth-child(even) {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+.fifth-section__item-13 {
+    > :nth-child(3n + 2) {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+.fifth-section__item-14 {
+    > :not(:last-child) {
+        color: crimson;
+        text-shadow: 0px 0px 5px rgb(209, 110, 129);
+        font-size: 18px;
+    }
+}
+
+
+
+
+.game__container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.342);
+    border-radius: 10px;
+    font-size: 0;
+    padding: 10px;
+}
+.line-styles {
+    background-color: white;
+    display: inline-block;
+    visibility: hidden;
+}
+.game__start {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(212, 85, 111);
+}
+.game__line-1 {
+    width: 40px;
+    height: 100px;
+    background-color: #1a1a1a;
+}
+.game__line-2 {
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 40px;
+}
+.game__line-3 {
+    width: 40px;
+    height: 100px;
+    margin-left: 740px;
+    background-color: #1a1a1a;
+}
+.game__line-4 {
+    width: 100%;
+    height: 40px;
+    background-color: #1a1a1a;
+}
+.game__line-5 {
+    width: 20px;
+    height: 100px;
+    background-color: #1a1a1a;
+}
+.game__line-6 {
+    width: 100%;
+    height: 15px;
+    background-color: #1a1a1a;
+}
+.game__line-7 {
+    width: 10px;
+    height: 100px;
+    margin-left: 770px;
+    background-color: #1a1a1a;
+}
+.game__finish {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(212, 85, 111);
+    margin-left: 680px;
+    visibility: hidden;
+}
+.game__start:hover ~ .game__line-1, .game__line-1:hover {
+    visibility: visible;
+}
+.game__line-1:hover ~ .game__line-2, .game__line-2:hover {
+    visibility: visible;
+}
+.game__line-2:hover ~ .game__line-3, .game__line-3:hover {
+    visibility: visible;
+}
+.game__line-3:hover ~ .game__line-4, .game__line-4:hover {
+    visibility: visible;
+}
+.game__line-4:hover ~ .game__line-5, .game__line-5:hover {
+    visibility: visible;
+}
+.game__line-5:hover ~ .game__line-6, .game__line-6:hover {
+    visibility: visible;
+}
+.game__line-6:hover ~ .game__line-7, .game__line-7:hover {
+    visibility: visible;
+}
+.game__line-7:hover ~ .game__finish, .game__finish:hover {
+    visibility: visible;
+}
