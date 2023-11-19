@@ -1,0 +1,391 @@
+@import url("fonts.css");
+.categories-men__container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.categories-men__container > :not(:last-child) {
+  margin-bottom: 70px;
+}
+
+.categories-men__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  font-family: "CoreSansCBold", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #3C4242;
+}
+
+.categories-men__line {
+  width: 6px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #8A33FD;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.categories-men__listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.item-classification-clothing {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 250px;
+          flex: 0 1 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.item-classification-clothing > :not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.item-classification-clothing__image img {
+  max-width: 100%;
+}
+
+.item-classification-clothing__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-classification-clothing__text > :not(:last-child) {
+  margin-bottom: 5px;
+}
+.item-classification-clothing__text p {
+  color: #7F7F7F;
+  font-family: "CaustenRegular", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+}
+.item-classification-clothing__text h4 {
+  color: #2A2F2F;
+  font-family: "CaustenBold", sans-serif;
+  font-size: 17px;
+}
+
+.item-classification-clothing__arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header {
+  border-bottom: 1px solid #BEBCBD;
+}
+
+.header__container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search {
+  padding: 12px 48px;
+  border-radius: 8px;
+  background-color: #F6F6F6;
+}
+
+.search__settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.search__settings input {
+  width: 60px;
+  background-color: #F6F6F6;
+}
+
+.header__language-settings-authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+
+.language {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.language__settings select {
+  font-family: "CaustenRegular";
+  font-size: 18px;
+  color: #333;
+}
+
+.header__authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.header__login {
+  padding: 10px 40px 10px 40px;
+  background-color: #8A33FD;
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.header__sign-up {
+  padding: 10px 40px 10px 40px;
+  color: #8A33FD;
+  font-family: "Causten", sans-serif;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.wishlist__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.wishlist__container > :not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.wishlist__title {
+  color: #3C4242;
+  font-family: "CoreSansCBold", sans-serif;
+  font-size: 28px;
+}
+
+.wishlist__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px 30px 0px;
+  border-bottom: 1px solid #bebebe;
+}
+
+.listing__product-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 35px;
+}
+
+.listing__image img {
+  max-width: 100%;
+}
+
+.listing__text {
+  font-family: "CaustenBold", sans-serif;
+  font-size: 22px;
+  color: #3C4242;
+}
+.listing__text > :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.listing__text--grey {
+  color: #807D7E;
+  font-family: "CaustenRegular", sans-serif;
+  font-size: 22px;
+}
+
+.listing__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.listing__price {
+  font-family: "CaustenBold", sans-serif;
+  font-size: 22px;
+  color: #807D7E;
+}
+
+.listing__button {
+  font-family: "CaustenRegular", sans-serif;
+  font-size: 18px;
+  background: #8A33FD;
+  border-radius: 8px;
+  padding: 15px 25px;
+  color: #FFF;
+}
+
+.order__container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.item__information-about-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F6F6F6;
+  border-radius: 8px;
+  padding: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item__numer h4 {
+  font-family: "CaustenBold", sans-serif;
+  font-size: 20px;
+  color: #3C4242;
+}
+.item__numer p {
+  font-family: "CaustenBold", sans-serif;
+  font-size: 14px;
+  color: #807D7E;
+}
+.item__numer > :not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.item__numer--grey {
+  color: #BEBCBD;
+  font-family: "CaustenRegular", sans-serif;
+}
+
+.item__status {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.item__status > :not(:last-child) {
+  margin-bottom: 7px;
+}
+.item__status p {
+  font-family: "CaustenBold", sans-serif;
+  font-size: 14px;
+  color: #807D7E;
+}
+
+.item__status--grey {
+  color: #BEBCBD;
+  font-family: "CaustenRegular", sans-serif;
+}
+
+.item__demonstration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item__information-about-clothing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.item__image img {
+  max-width: 100%;
+}
+
+.item__text {
+  font-family: "CaustenBold", sans-serif;
+}
+.item__text > :not(:last-child) {
+  margin-bottom: 7px;
+}
+.item__text h6 {
+  font-size: 16px;
+  color: #3C4242;
+}
+.item__text p {
+  color: #3C4242;
+}
+
+.item__text--grey {
+  color: #BEBCBD;
+}
+
+.item__button {
+  padding: 15px 25px;
+  background-color: #8A33FD;
+  border-radius: 8px;
+  font-family: "CaustenRegular", sans-serif;
+  font-size: 18px;
+  color: #FFF;
+}
