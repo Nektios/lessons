@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text:regular,italic');
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900');
+
+$font-dm-serif: 'DM Serif Text', sans-serif;
+$font-inter: 'Inter', sans-serif;
+$font-cormorant: 'Cormorant Infant', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+
+$font-merri: 'Merriweather', sans-serif;
+body {
+    overflow-x: hidden;
+    background: #FFF9F4;
+}
+
+.header {
+    border-bottom: 1px solid rgba(131, 131, 131, 0.21);
+}
+.header__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+    font-family: $font-merri;
+}
+.header__logo {
+    h2 {
+        font-style: italic;
+        font-weight: 700;
+        font-size: 30px;
+    }
+}
+.navigation__list {
+    display: flex;
+    gap: 36px;
+    font-size: 20px;
+}
+.navigation__item {
+    &::after {
+        content: '';
+        display: block;
+        margin-top: 3px;
+        height: 2px;
+        width: 0;
+        background-color: black;
+        transition: 0.3s;
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
+.navigation__link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+        transition: 0.3s;
+    }
+    &:hover {
+        img {
+            transform: rotate(-180deg);
+        }
+    }
+}
+.header__button {
+    a {
+        display: block;
+        font-family: $font-merri;
+        font-size: 20px;
+        font-weight: 700;
+        color: #FFF;
+        padding: 12px 26px;
+        border-radius: 5px;
+        background: #0E333D;
+    }
+}
+
+
+.main {
+    padding: 200px 10px;
+}
+.main__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.main__information {
+    & > :not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+.main__title {
+    & > :not(:last-child) {
+        margin-bottom: 30px;
+    }
+    h1 {
+        font-family: $font-dm-serif;
+        font-size: 78px;
+        color: #0E333D;
+        line-height: 100px;
+    }
+    p {
+        font-size: 22px;
+        color: #727272;
+        line-height: 32px;
+        font-family: $font-inter;
+    }
+}
+.main__buttons {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.main__button-shop {
+    display: inline-block;
+    font-family: $font-dm-serif;
+    font-size: 28px;
+    color: #FFF;
+    padding: 10px 40px;
+    border-radius: 5px;
+    background: #0E333D;
+}
+.main__button-video {
+    display: inline-block;
+    font-family: $font-dm-serif;
+    font-size: 28px;
+    color: #000000;
+    text-decoration-line: underline;
+}
+.main__images {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    & > :last-child {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .main__container {
+        flex-direction: column;
+    }
+    .main__images {
+        opacity: 0.5;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        & > :last-child {
+            margin-bottom: 0px;
+        }
+    }
+    .main__title {
+        p {
+            color: #000000;
+        }
+    }
+}
+
+
+
+.footer {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    a {
+        display: inline-block;
+        font-size: 60px;
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 4px;
+            background-color: black;
+            transition: 0.3s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

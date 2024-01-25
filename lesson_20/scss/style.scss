@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text:regular,italic');
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900');
+
+$color-grey: #D8D8D8;
+$color-blue: #0E333D;
+
+$font-dm-serif: 'DM Serif Text', sans-serif;
+$font-inter: 'Inter', sans-serif;
+$font-cormorant: 'Cormorant Infant', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+
+#wrapper {
+    & > :not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+.popular {
+    padding: 0px 10px 0px 10px;
+}
+.popular__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.popular__title {
+    :not(:last-child) {
+        margin-bottom: 30px;
+    }
+    text-align: center;
+    h2 {
+        font-family: $font-dm-serif;
+        font-size: 48px;
+        font-weight: 400;
+    }
+    p {
+        font-family: $font-dm-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #8C8B8A;
+    }
+    margin-bottom: 130px;
+}
+.popular__body {
+    display: flex;
+    gap: 30px;
+}
+.popular__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.item {
+    :not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+.item__image {
+    img {
+        max-width: 100%;
+    }
+}
+.item__title {
+    font-family: $font-cormorant;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1240px) {
+    .popular__title {
+        background-color: #3D1901;
+        margin-bottom: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        h2 {
+            color: white;
+        }
+    }
+    .popular__body {
+        flex-direction: column;
+    }
+    .popular__items  {
+        justify-content: center;
+    }
+    .popular__demonstration {
+        display: none;
+    }
+}
+
+.reviews__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    & > :not(:last-child) {
+        margin-bottom: 90px;
+    }
+}
+.reviews__title {
+    text-align: center;
+    h6 {
+        font-family: $font-inter;
+        font-size: 15px;
+        color: #D06B00;
+        margin-bottom: 8px;
+    }
+    h2 {
+        font-family: $font-dm-serif;
+        font-size: 48px;
+        color: $color-blue;
+        margin-bottom: 20px;
+    }
+    p {
+        font-family: $font-raleway;
+        font-size: 20px;
+        font-weight: 500;
+        color: #8C8B8A;
+    }
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
+.reviews__content {
+    & > :not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+.reviews__list-messages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.message {
+    background-color: white;
+    flex: 0 1 555px;
+    border-radius: 12px;
+    border: 1px solid $color-grey;
+    padding: 50px;
+    & > :not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+.message__text {
+    p {
+        font-family: $font-inter;
+        font-size: 18px;
+        color: #323232;
+    }
+    
+}
+.message__data {
+    display: flex;
+    gap: 15px;
+}
+
+.message__name {
+    & > :not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-family: $font-inter;
+        font-size: 20px;
+        font-weight: 500;
+        color: #323756;
+    }
+    p {
+        font-family: $font-inter;
+        font-size: 16px;
+        color: #646464;
+    }
+}
+.message--blue {
+    background-color: #0E333D;
+}
+.message__text--white {
+    p {
+        color: white;
+    }
+}
+.message__name--white {
+    h4 {
+        color: white;
+    }
+}
+.reviews__scrolling {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.reviews__round {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $color-grey;
+}
+.reviews__round--blue {
+    background-color: $color-blue;
+}
