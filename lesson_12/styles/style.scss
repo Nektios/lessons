@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900');
+
+
+.header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.363);
+    background-color: rgb(51, 51, 51);
+}
+.header__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.navigation__list {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    & > li {
+        display: inline-block;
+    }
+    & > li > a {
+        display: inline-block;
+        padding: 20px 10px;
+        &:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(51, 51, 51);
+        }
+    }
+}
+.navigation__submenu-first, .navigation__submenu-second {
+    display: none;
+    text-align: left;
+    position: absolute;
+    color: #000;
+    background-color: rgb(143, 143, 143);
+    width: 200px;
+    & > li > a {
+        display: inline-block;
+        padding: 20px 10px;
+    }
+    & > li {
+        &:not(:last-child) {
+            border-bottom: 1px solid rgb(46, 46, 46);
+        }
+        &:hover {
+            background-color: rgb(116, 116, 116);
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+.navigation__submenu-second {
+    left: 200px;
+    top: 120px;
+}
+
+.navigation__list li:hover > ul {
+    display: block;
+}
+
+.squady {
+    padding: 150px 10px;
+}
+.squady__container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.item-first, .item-second, .item-third, .item-fourth, .item-fifth, .item-sixth {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 385px;
+    height: 532px;
+    margin: 5px;
+}
+[class*="__title"] {
+    position: relative;
+    z-index: 1;
+    top: 400px;
+    padding: 25px 70px;
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    h4 {
+        color: #37393F;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+    p {
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        color: #7D7D7D;
+    }
+}
+
+
+.item-first {
+    background-image: url('../images/photo6.jpg');
+    background-size: cover;
+}
+
+.item-first__social {
+    display: none;
+    position: absolute;
+    width: 385px;
+    height: 532px;
+    top: 215px;
+    text-align: center;
+    background-color: rgba(107, 119, 229, 0.70);
+    img {
+        margin-top: 240px;
+    }
+}
+
+.item-second {
+    background-image: url('../images/photo1.jpg');
+    background-size: cover;
+}
+
+.item-second__social {
+    display: none;
+    position: absolute;
+    width: 385px;
+    height: 532px;
+    top: 215px;
+    text-align: center;
+    background-color: rgba(107, 119, 229, 0.70);
+    img {
+        margin-top: 240px;
+    }
+}
+
+.item-third {
+    background-image: url('../images/photo3.jpg');
+    background-size: cover;
+}
+
+.item-third__social {
+    display: none;
+    position: absolute;
+    width: 385px;
+    height: 532px;
+    top: 215px;
+    text-align: center;
+    background-color: rgba(107, 119, 229, 0.70);
+    img {
+        margin-top: 240px;
+    }
+}
+
+.item-fourth {
+    background-image: url('../images/photo4.jpg');
+    background-size: cover;
+}
+
+.item-fourth__social {
+    display: none;
+    position: absolute;
+    width: 385px;
+    height: 532px;
+    top: 756px;
+    text-align: center;
+    background-color: rgba(107, 119, 229, 0.70);
+    img {
+        margin-top: 240px;
+    }
+}
+
+.item-fifth {
+    background-image: url('../images/photo5.jpg');
+    background-size: cover;
+}
+
+.item-fifth__social {
+    display: none;
+    position: absolute;
+    width: 385px;
+    height: 532px;
+    top: 756px;
+    text-align: center;
+    background-color: rgba(107, 119, 229, 0.70);
+    img {
+        margin-top: 240px;
+    }
+}
+
+.item-sixth {
+    background-image: url('../images/photo6.jpg');
+    background-size: cover;
+}
+
+.item-sixth__social {
+    display: none;
+    position: absolute;
+    width: 385px;
+    height: 532px;
+    top: 756px;
+    text-align: center;
+    background-color: rgba(107, 119, 229, 0.70);
+    img {
+        margin-top: 240px;
+    }
+}
+@for $i from 1 through 6 {
+    $class: nth(("first", "second", "third", "fourth", "fifth", "sixth"), $i);
+    .item-#{$class}:hover {
+        > .item-#{$class}__social {
+        display: block;
+        }
+    }
+}

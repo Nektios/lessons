@@ -1,0 +1,168 @@
+body {
+    background-image: url('../images/df.png');
+    background-size: cover;
+    background-position: center;
+}
+.bamper {
+    width: 395px;
+    height: 130px;
+    background-color: rgb(111, 189, 189);
+    position: absolute;
+    top: 64.5%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-0.3deg) skew(0deg, 4.5deg);
+    z-index: 10;
+}
+.left-chast {
+    width: 670px;
+    height: 130px;
+    position: absolute;
+    top: 59.8%;
+    left: 48.56%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(81, 138, 138);
+    transform: rotate(-0.3deg) skew(0deg, -9.5deg);
+    z-index: 10;
+}
+.kapot {
+    position: absolute;
+    width: 397px;
+    height: 130px;
+    position: absolute;
+    top: 51.7%;
+    left: 35.4%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(96, 163, 163);
+    transform: rotate(4.1deg) skewX(-65deg);
+    z-index: 5;
+}
+.left-chast-1 {
+    width: 320px;
+    height: 100px;
+    position: absolute;
+    top: 57%;
+    left: 47.43%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(73, 124, 124);
+    transform: rotate(-10deg);
+    z-index: 4;
+    
+}
+.left-chast-2 {
+    width: 380px;
+    height: 60px;
+    background-color: rgb(67, 114, 114);
+    position: absolute;
+    top: 51%;
+    left: 62.9%;
+    transform: translate(-50%, -50%);
+    transform: rotate(-0.3deg) skew(25deg, -9.5deg);
+}
+.lobovoe-steklo {
+    width: 405px;
+    height: 120px;
+    background-image: url('../images/ryan.webp');
+    background-color: black;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+    position: absolute;
+    top: 42.3%;
+    left: 44.5%;
+    transform: translate(-50%, -50%);
+    transform: rotate(3deg) skewX(-40deg);
+}
+.ramki {
+    position: absolute;
+    background-color: rgb(104, 177, 177);
+}
+.lobovoe-steklo-ramka1 {
+    width: 10px;
+    height: 100px;
+    top: 41.3%;
+    left: 44.9%;
+    transform: translate(-50%, -50%);
+    transform: rotate(3deg) skewX(-40deg);
+}
+.lobovoe-steklo-ramka2 {
+    width: 10px;
+    height: 130px;
+    top: 43.5%;
+    left: 64.73%;
+    transform: translate(-50%, -50%);
+    transform: rotate(3deg) skewX(-40deg);
+}
+.lobovoe-steklo-ramka3 {
+    width: 405px;
+    height: 10px;
+    top: 42.6%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    transform: rotate(3deg) skewX(-40deg);
+    z-index: 10;
+}
+.koleso-1, .koleso-2 {
+    position: absolute;
+    top: 68%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    background-color: rgb(22, 22, 22);
+    z-index: 10;
+    transform: rotate(-0.3deg) skew(0deg, -9.5deg);
+}
+.koleso-1-pokryshki, .koleso-2-pokryshki {
+    position: absolute;
+    top: 69.2%;
+    left: 55.6%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background-color: rgb(158, 158, 158);
+    z-index: 11;
+    transform: rotate(-0.3deg) skew(0deg, -9.5deg);
+}
+.koleso-1-pokryshki-2, .koleso-2-pokryshki-2  {
+    position: absolute;
+    top: 69.8%;
+    left: 55.9%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background-color: rgb(128, 128, 128);
+    z-index: 11;
+    transform: rotate(-0.3deg) skew(0deg, -9.5deg);
+}
+.koleso-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    left: 75%;
+}
+.koleso-2-pokryshki {
+    width: 130px;
+    height: 130px;
+    top: 61%;
+    left: 75.5%;
+}
+.koleso-2-pokryshki-2 {
+    width: 120px;
+    height: 120px;
+    top: 61.6%;
+    left: 75.8%;
+}
+.krysha {
+    width: 400px;
+    height: 40px;
+    background-color: rgb(68, 116, 116);
+    position: absolute;
+    top: 39.1%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    transform: rotate(3deg) skewX(-78deg);
+}
