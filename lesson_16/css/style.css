@@ -20,6 +20,12 @@
   font-family: "CaustenRegular", sans-serif;
 }
 
+[class*=_line] {
+  width: 100%;
+  height: 1px;
+  background-color: #BEBCBD;
+}
+
 .private-information {
   padding: 40px 10px;
 }
@@ -51,33 +57,33 @@
   color: #3C4242;
   margin-bottom: 10px;
 }
-.private-information__form input, .private-information__form textarea, .billing-details input, .billing-details textarea {
+.private-information__form input, .private-information__form textarea, .private-information__form select, .billing-details input, .billing-details textarea, .billing-details select {
   width: 100%;
   padding: 15px 20px;
   background: #F6F6F6;
   border-radius: 8px;
 }
-.private-information__form input::-webkit-input-placeholder, .private-information__form textarea::-webkit-input-placeholder, .billing-details input::-webkit-input-placeholder, .billing-details textarea::-webkit-input-placeholder {
+.private-information__form input::-webkit-input-placeholder, .private-information__form textarea::-webkit-input-placeholder, .private-information__form select::-webkit-input-placeholder, .billing-details input::-webkit-input-placeholder, .billing-details textarea::-webkit-input-placeholder, .billing-details select::-webkit-input-placeholder {
   font-family: "CaustenRegular", sans-serif;
   font-size: 16px;
   color: #807D7E;
 }
-.private-information__form input::-moz-placeholder, .private-information__form textarea::-moz-placeholder, .billing-details input::-moz-placeholder, .billing-details textarea::-moz-placeholder {
+.private-information__form input::-moz-placeholder, .private-information__form textarea::-moz-placeholder, .private-information__form select::-moz-placeholder, .billing-details input::-moz-placeholder, .billing-details textarea::-moz-placeholder, .billing-details select::-moz-placeholder {
   font-family: "CaustenRegular", sans-serif;
   font-size: 16px;
   color: #807D7E;
 }
-.private-information__form input:-ms-input-placeholder, .private-information__form textarea:-ms-input-placeholder, .billing-details input:-ms-input-placeholder, .billing-details textarea:-ms-input-placeholder {
+.private-information__form input:-ms-input-placeholder, .private-information__form textarea:-ms-input-placeholder, .private-information__form select:-ms-input-placeholder, .billing-details input:-ms-input-placeholder, .billing-details textarea:-ms-input-placeholder, .billing-details select:-ms-input-placeholder {
   font-family: "CaustenRegular", sans-serif;
   font-size: 16px;
   color: #807D7E;
 }
-.private-information__form input::-ms-input-placeholder, .private-information__form textarea::-ms-input-placeholder, .billing-details input::-ms-input-placeholder, .billing-details textarea::-ms-input-placeholder {
+.private-information__form input::-ms-input-placeholder, .private-information__form textarea::-ms-input-placeholder, .private-information__form select::-ms-input-placeholder, .billing-details input::-ms-input-placeholder, .billing-details textarea::-ms-input-placeholder, .billing-details select::-ms-input-placeholder {
   font-family: "CaustenRegular", sans-serif;
   font-size: 16px;
   color: #807D7E;
 }
-.private-information__form input::placeholder, .private-information__form textarea::placeholder, .billing-details input::placeholder, .billing-details textarea::placeholder {
+.private-information__form input::placeholder, .private-information__form textarea::placeholder, .private-information__form select::placeholder, .billing-details input::placeholder, .billing-details textarea::placeholder, .billing-details select::placeholder {
   font-family: "CaustenRegular", sans-serif;
   font-size: 16px;
   color: #807D7E;
@@ -330,12 +336,6 @@
   border: none;
 }
 
-.form-payment__line {
-  width: 100%;
-  height: 1px;
-  background-color: #BEBCBD;
-}
-
 .shipping-adress > :not(:last-child) {
   margin-bottom: 30px;
 }
@@ -394,12 +394,6 @@
   background-position-x: 2px;
   background-position-y: 1.5px;
   background-repeat: no-repeat;
-}
-
-.shipping-adress__line {
-  width: 100%;
-  height: 1px;
-  background-color: #BEBCBD;
 }
 
 .shipping-method > :not(:last-child) {

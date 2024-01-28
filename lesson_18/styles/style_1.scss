@@ -17,6 +17,7 @@ body {
 
 .header {
     border-bottom: 1px solid rgba(131, 131, 131, 0.21);
+    padding: 0px 10px;
 }
 .header__container {
     max-width: 1600px;
@@ -81,6 +82,23 @@ body {
 }
 
 
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+}
+.burger__block {
+    width: 20px;
+    height: 2px;
+    background-color: #502203;
+}
+
+
+
+
+
+
+
 .main {
     padding: 200px 10px;
 }
@@ -140,6 +158,22 @@ body {
     gap: 30px;
     & > :last-child {
         margin-bottom: 70px;
+    }
+}
+
+
+@media screen and (max-width: 1206px) {
+    .navigation {
+        display: none;
+    }
+    .header__button {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+    .header__container {
+        justify-content: space-between;
     }
 }
 

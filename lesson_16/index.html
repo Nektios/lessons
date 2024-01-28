@@ -47,7 +47,11 @@
                         </div>
                         <div class="private-information__state">
                             <h6>State*</h6>
-                            <input type="text" placeholder="State" required>
+                            <select id="state" name="state">
+                                <option value="CHIPI CHIPI">CHIPI CHIPI</option>
+                                <option value="CHAPA CHAPA">CHAPA CHAPA</option>
+                                <option value="DUBI DUBI">DUBI DUBI</option>
+                            </select>
                         </div>
                         <div class="private-information__phone">
                             <h6>Phone*</h6>
@@ -122,7 +126,11 @@
                             </div>
                             <div class="billing-details__state">
                                 <label for="state-payment">State*</label>
-                                <input type="text" name="state-payment" id="state-payment" required placeholder="State">
+                                <select id="state-payment" name="state-payment">
+                                    <option value="CHIPI CHIPI">CHIPI CHIPI</option>
+                                    <option value="CHAPA CHAPA">CHAPA CHAPA</option>
+                                    <option value="DUBI DUBI">DUBI DUBI</option>
+                                </select>
                             </div>
                             <div class="billing-details__postal-code">
                                 <label for="postal-code-payment">Postal Code*</label>
@@ -167,7 +175,7 @@
                                 <div class="shipping-method__day">
                                     <h4>Arrives by Monday, June 7</h4>
                                 </div>
-                                <div class="shipping-adress__line"></div>
+                                <div class="shipping-method__line"></div>
                                 <div class="shipping-method__charges">
                                     <div class="shipping-method__price">
                                         <h4>Delivery Charges</h4>
@@ -207,7 +215,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="shipping-adress__line"></div>
+                                <div class="payment-method__line"></div>
                                 <div class="payment-method__dilevery-cash">
                                     <label for="second-choice-method-payment">
                                         <input type="radio" name="choice-method-payment" id="second-choice-method-payment">
@@ -215,7 +223,7 @@
                                         <span class="payment-method__text">Pay with cash upon delivery.</span>
                                     </label>
                                 </div>
-                                <div class="shipping-adress__line"></div>
+                                <div class="payment-method__line"></div>
                                 <div class="payment-method__paypol">
                                     <label for="third-choice-method-payment">
                                         <input type="radio" name="choice-method-payment" id="third-choice-method-payment">

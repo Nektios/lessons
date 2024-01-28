@@ -13,7 +13,9 @@ $font-merri: 'Merriweather', sans-serif;
 body {
     overflow-x: hidden;
 }
-
+.header {
+    padding: 0px 10px;
+}
 .header__container {
     max-width: 1600px;
     margin: 0 auto;
@@ -32,10 +34,7 @@ body {
         font-size: 30px;
     }
 }
-.header__navigation {
-}
-.navigation {
-}
+
 .navigation__list {
     display: flex;
     gap: 36px;
@@ -94,6 +93,17 @@ body {
 }
 
 
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+}
+.burger__block {
+    width: 20px;
+    height: 2px;
+    background-color: #502203;
+}
+
 
 
 
@@ -137,6 +147,7 @@ body {
         position: absolute;
         border-radius: 4px;
         margin: -15px 0px 5px 10px;
+        display: block;
     }
 }
 .main__image {
@@ -205,6 +216,7 @@ body {
     z-index: 1;
 }
 
+
 @media screen and (max-width: 1181px) {
     .main__container {
         flex-direction: column;
@@ -225,7 +237,6 @@ body {
         height: auto;
         background-color: rgba(139, 69, 19, 0);
         a {
-            display: block;
             position: static;
             margin: 0;
         }
@@ -236,6 +247,18 @@ body {
         :last-child {
             align-self: auto;
         }
+    }
+    .burger {
+        display: flex;
+    }
+    .navigation {
+        display: none;
+    }
+    .header__basket {
+        display: none;
+    }
+    .header__container {
+        justify-content: space-between;
     }
 }
 
