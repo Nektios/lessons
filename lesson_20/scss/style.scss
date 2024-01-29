@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Text:regular,italic');
 @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900');
+@import url('../styles/reset.css');
 
 $color-grey: #D8D8D8;
 $color-blue: #0E333D;
@@ -19,74 +20,67 @@ $font-raleway: 'Raleway', sans-serif;
 
 .popular {
     padding: 0px 10px 0px 10px;
-}
-.popular__container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.popular__title {
-    :not(:last-child) {
-        margin-bottom: 30px;
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
     }
-    text-align: center;
-    h2 {
-        font-family: $font-dm-serif;
-        font-size: 48px;
-        font-weight: 400;
-    }
-    p {
-        font-family: $font-dm-serif;
-        font-size: 20px;
-        font-weight: 500;
-        color: #8C8B8A;
-    }
-    margin-bottom: 130px;
-}
-.popular__body {
-    display: flex;
-    gap: 30px;
-}
-.popular__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.item {
-    :not(:last-child) {
-        margin-bottom: 15px;
-    }
-}
-.item__image {
-    img {
-        max-width: 100%;
-    }
-}
-.item__title {
-    font-family: $font-cormorant;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-@media screen and (max-width: 1240px) {
-    .popular__title {
-        background-color: #3D1901;
-        margin-bottom: 20px;
-        padding: 30px;
-        border-radius: 10px;
+    &__title {
+        :not(:last-child) {
+            margin-bottom: 30px;
+        }
+        text-align: center;
         h2 {
-            color: white;
+            font-family: $font-dm-serif;
+            font-size: 48px;
+            font-weight: 400;
+        }
+        p {
+            font-family: $font-dm-serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: #8C8B8A;
+        }
+        margin-bottom: 130px;
+    }
+    &__body {
+        display: flex;
+        gap: 30px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__demonstration {
+        flex: 1 0 400px;
+        img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 400 / 730;
+            object-fit: cover;
         }
     }
-    .popular__body {
-        flex-direction: column;
+}
+.item {
+    &:not(:last-child) {
+        margin-bottom: 15px;
     }
-    .popular__items  {
-        justify-content: center;
+    &__title {
+        font-family: $font-cormorant;
+        font-weight: 700;
+        font-size: 24px;
     }
-    .popular__demonstration {
-        display: none;
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 370 / 280;
+            object-fit: cover;
+        }
     }
 }
+
+
 
 .reviews__container {
     max-width: 1600px;
@@ -140,50 +134,51 @@ $font-raleway: 'Raleway', sans-serif;
     & > :not(:last-child) {
         margin-bottom: 30px;
     }
-}
-.message__text {
-    p {
-        font-family: $font-inter;
-        font-size: 18px;
-        color: #323232;
+    &__text {
+        p {
+            font-family: $font-inter;
+            font-size: 18px;
+            color: #323232;
+        }
+        
     }
+    &__data {
+        display: flex;
+        gap: 15px;
+    }
+    &_name {
+        & > :not(:last-child) {
+            margin-bottom: 10px;
+        }
     
-}
-.message__data {
-    display: flex;
-    gap: 15px;
+        h4 {
+            font-family: $font-inter;
+            font-size: 20px;
+            font-weight: 500;
+            color: #323756;
+        }
+        p {
+            font-family: $font-inter;
+            font-size: 16px;
+            color: #646464;
+        }
+    }
+    &--blue {
+        background-color: #0E333D;
+    }
+    &__text--white {
+        p {
+            color: white;
+        }
+    }
+    &__name--white {
+        h4 {
+            color: white;
+        }
+    }
 }
 
-.message__name {
-    & > :not(:last-child) {
-        margin-bottom: 10px;
-    }
 
-    h4 {
-        font-family: $font-inter;
-        font-size: 20px;
-        font-weight: 500;
-        color: #323756;
-    }
-    p {
-        font-family: $font-inter;
-        font-size: 16px;
-        color: #646464;
-    }
-}
-.message--blue {
-    background-color: #0E333D;
-}
-.message__text--white {
-    p {
-        color: white;
-    }
-}
-.message__name--white {
-    h4 {
-        color: white;
-    }
-}
 .reviews__scrolling {
     display: flex;
     justify-content: center;
@@ -197,4 +192,28 @@ $font-raleway: 'Raleway', sans-serif;
 }
 .reviews__round--blue {
     background-color: $color-blue;
+}
+
+
+
+
+@media screen and (max-width: 1240px) {
+    .popular__title {
+        background-color: #3D1901;
+        margin-bottom: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        h2 {
+            color: white;
+        }
+    }
+    .popular__body {
+        flex-direction: column;
+    }
+    .popular__items  {
+        justify-content: center;
+    }
+    .popular__demonstration {
+        display: none;
+    }
 }
