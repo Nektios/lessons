@@ -23,6 +23,10 @@ $font-raleway: 'Raleway', sans-serif;
     &__container {
         max-width: 1200px;
         margin: 0 auto;
+
+        & > :not(:last-child) {
+            margin-bottom: 40px;
+        }
     }
     &__title {
         & > :not(:last-child) {
@@ -40,7 +44,6 @@ $font-raleway: 'Raleway', sans-serif;
             font-weight: 500;
             color: #8C8B8A;
         }
-        margin-bottom: 130px;
     }
     &__body {
         display: flex;
