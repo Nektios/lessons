@@ -1,0 +1,141 @@
+
+.header {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    &__container {
+        @include container-styles (1240px, flex);
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 10px;
+    }
+
+    &__logo {
+
+        img {
+            @include choose-adaptive ('image-adaptive2');
+        }
+
+    }
+    .drop-down-menu {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        .drop-down-menu__item {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background-color: black;
+        }
+        @media screen and (max-width: 1150px) {
+            display: flex;
+        }
+    }
+}
+.navigation {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+
+
+    &__listing {
+        display: flex;
+        gap: 40px;
+        font-size: 22px;
+        font-family: "Causten Bold", sans-serif;
+        color: $dark-gray-color;
+
+        @media screen and (max-width: 1150px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        a {
+            transition: 0.3s;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: $graphite-color;
+                margin-top: 2px;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                color: $graphite-color;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__control-panel {
+        display: flex;
+        gap: 12px;
+
+        button {
+            background-color: $very-light-shade-gray;
+            border-radius: 8px;
+            padding: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            img {
+                @include choose-adaptive ('image-adaptive3', null, 20px, 20px);
+            }
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: $pale-gray-color;
+                }
+            }
+        }
+        @media screen and (max-width: 750px) {
+            display: none;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+
+        input {
+            padding: 12px 40px;
+            background-color: $very-light-shade-gray;
+            border-radius: 8px;
+            order: 2;
+            transition: 0.2s;
+        }
+
+        button {
+            position: absolute;
+            margin-left: 12px;
+            background-color: $very-light-shade-gray;
+            cursor: pointer;
+            transition: 0.2s;
+
+            img {
+                @include choose-adaptive ('image-adaptive3', null, 20px, 20px);
+            }
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                input, button {
+                    background-color: $pale-gray-color;
+                }
+            }
+        }
+        @media screen and (max-width: 750px) {
+            display: none;
+        }
+        
+    }
+
+}

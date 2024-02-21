@@ -1,0 +1,108 @@
+.footer {
+    background-color: $graphite-color;
+    padding: 60px 10px;
+    &__container {
+        @include container-styles (1060px, grid);
+        gap: 30px
+    }
+    &__information {
+        display: flex;
+        gap: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media screen and (max-width: 1087px) {
+            text-align: center;
+        }
+    }
+    &__help, &__more, &__company, &__location {
+        color: white;
+        flex: 1 1 150px;
+        & > :last-child {
+            margin-bottom: 0px;
+        }
+        h4 {
+            font-family: 'Causten Bold', sans-serif;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        a {
+            display: block;
+            font-family: 'Causten Regular', sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: #b3b3b3;
+                }
+            }
+            
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        @media screen and (max-width: 630px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .footer__social {
+                align-self: auto;
+            }
+        }
+    }
+    &__social {
+        align-self: flex-end;
+        display: flex;
+        gap: 10px;
+        img {
+            display: inline-block;
+        }
+    }
+    &__apps {
+        h2 {
+            font-family: 'Causten Bold', sans-serif;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: white;
+        }
+        & > :last-child {
+            margin-bottom: 0px;
+        }
+        img {
+            display: inline-block;
+        }
+    }
+    &__popular {
+        display: flex;
+        gap: 20px;
+        padding: 30px 0px;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        label {
+            font-family: 'Causten Bold', sans-serif;
+            font-size: 28px;
+            color: white;
+        }
+        select {
+            color: white;
+            flex-grow: 1;
+            background-color: $graphite-color;
+            width: 100%;
+        }
+        @media screen and (max-width: 630px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &__copyrigth {
+        text-align: center;
+        p {
+            font-family: 'Causten Bold', sans-serif;
+            font-size: 18px;
+            color: white;
+        }
+    }
+}

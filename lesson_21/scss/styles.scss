@@ -1,0 +1,112 @@
+
+
+
+//color
+
+$graphite-color: #3C4242;
+$dark-gray-color: #807D7E;
+$gray-color: #BEBCBD;
+$pale-gray-color: #EDEEF2;
+$very-light-shade-gray: #F6F6F6;
+$purple-color: #8A33FD;
+
+
+
+
+//mixin
+
+@mixin primary-button-styles {
+    padding: 15px 70px;
+    border-radius: 8px;
+    background-color: $white-color;
+    color: $graphite-color;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: 'Causten Bold', sans-serif;
+    a& {
+        display: block;
+    }
+}
+
+@mixin secondary-button-styles ($border-color, $color) {
+    color: $color;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    font-family: "Causten Regular", sans-serif;
+    font-size: 12px;
+    a& {
+        display: block;
+    }
+}
+
+@mixin container-styles ($width, $display) {
+    max-width: $width;
+    margin: 0 auto;
+    display: $display;
+}
+
+@mixin choose-adaptive ($image-adaptive, $value-aspect: null, $value-wd: null, $value-hd: null) {
+    @if $image-adaptive == 'image-adaptive1' {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @if $value-aspect != null {
+            aspect-ratio: unquote($value-aspect);
+        }
+    } @else if $image-adaptive == 'image-adaptive2' {
+        max-width: 100%;
+        display: block;
+    } @else  if $image-adaptive == 'image-adaptive3' {
+        display: block;
+        @if $value-wd != null {
+            width: $value-wd;
+        }
+        @if $value-hd != null {
+            height: $value-hd;
+        }
+    }
+}
+
+
+//general-styles 
+#wrapper {
+    display: flex;
+    overflow: clip;
+    flex-direction: column;
+    min-height: 100%;
+    row-gap: 50px;
+}
+
+
+[class*="__title"] {
+    h2 {
+        font-family: "Core Sans C Bold", sans-serif;
+        font-size: 34px;
+        color: $graphite-color;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 30px;
+            background-color: $purple-color;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+
+// Connection styles
+
+@import 'reset';
+@import 'fonts';
+@import 'header';
+@import 'main';
+@import 'footer';

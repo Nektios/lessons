@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lesson 21</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="images/header/logo/Logo.svg" alt="logo-header">
+                </div>
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__listing">
+                        <li class="navigation__item"><a href="#">Shop</a></li>
+                        <li class="navigation__item"><a href="#">Men</a></li>
+                        <li class="navigation__item"><a href="#">Women</a></li>
+                        <li class="navigation__item"><a href="#">Combos</a></li>
+                        <li class="navigation__item"><a href="#">Joggers</a></li>
+                    </ul>
+                    <form class="navigation__search" method="GET" enctype="multipart/form-data" action="#">
+                        <input type="text" placeholder="Search">
+                        <button>
+                            <img src="images/header/search.svg" alt="search">
+                        </button>
+                    </form>
+                    <div class="navigation__control-panel">
+                        <button>
+                            <img src="images/header/heart.svg" alt="heart-ico-header">
+                        </button>
+                        <button>
+                            <img src="images/header/user.svg" alt="user-ico-header">
+                        </button>
+                        <button>
+                            <img src="images/header/shopping-cart.svg" alt="shopping-cart-ico-header">
+                        </button>
+                    </div>
+                </nav>
+                <div class="header__drop-down-menu drop-down-menu">
+                    <div class="drop-down-menu__item"></div>
+                    <div class="drop-down-menu__item"></div>
+                    <div class="drop-down-menu__item"></div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <!-- <div class="main__wardrobe-slider wardrobe-slider">
+                <div class="wardrobe-slider__conteiner">
+                    <div class="wardrobe-slider__title">
+                        <h3>T-shirt / Tops</h3>
+                        <h1>Summer<br> Value Pack</h1>
+                        <h3>cool / colorful / comfy</h3>
+                        <a href="#">Show Now</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="main__collection-seeson collection-seeson">
+                <div class="collection-seeson__container">
+                    <article class="collection-seeson__first-section">
+                        <img src="images/main/first-woman.jpg" alt="Image">
+                        <div class="collection-seeson__text">
+                            <h5>Low Price</h5>
+                            <h2>High Coziness</h2>
+                            <p>UPTO 50% OFF</p>
+                            <h4>Explore Items</h4>
+                        </div>  
+                    </article>
+                    <article class="collection-seeson__second-section">
+                        <img src="images/main/second-woman.jpg" alt="Image">
+                        <div class="collection-seeson__text">
+                            <h5>Beyoung Presents</h5>
+                            <h2>Breezy Summer<br> Style</h2>
+                            <p>UPTO 50% OFF</p>
+                            <h4>Explore Items</h4>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <section class="main__fresh-looks fresh-looks">
+                <div class="fresh-looks__container">
+                    <div class="fresh-looks__title">
+                        <h2>New Arrival</h2>
+                    </div>
+                    <div class="fresh-looks__listing">
+                        <div class="fresh-looks__item">
+                            <div class="fresh-looks__img">
+                                <img src="images/main/photographer-white-background.jpg" alt="Photo">
+                            </div>
+                            <p>Knitted Joggers</p>
+                        </div>
+                        <div class="fresh-looks__item">
+                            <div class="fresh-looks__img">
+                                <img src="images/main/rectangle-28.jpg" alt="Photo">
+                            </div>
+                            <p>Full Sleeve</p>
+                        </div>
+                        <div class="fresh-looks__item">
+                            <div class="fresh-looks__img">
+                                <img src="images/main/rectangle-29.jpg" alt="Photo">
+                            </div>
+                            <p>Active T-Shirts</p>
+                        </div>
+                        <div class="fresh-looks__item">
+                            <div class="fresh-looks__img">
+                                <img src="images/main/rectangle-30.jpg" alt="Photo">
+                            </div>
+                            <p>Urban Shirts</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__trend-clothes trend-clothes">
+                <div class="trend-clothes__container">
+                    <div class="trend-clothes__title">
+                        <h2>Big Saving Zone</h2>
+                    </div>
+                    <div class="trend-clothes__content">
+                        <article class="trend-clothes__first-promo first-promo">
+                            <img src="images/main/1.jpg" alt="Image" class="first-promo__back">
+                            <div class="first-promo__text">
+                                <h3>Hawaiian<br>Shirts</h3>
+                                <p>Dress up in summer vibe</p>
+                                <h4>UPTO 50% OFF</h4>
+                            </div>
+                            <div class="first-promo__link">
+                                <img src="images/main/arrow2.svg" alt="arrow" class="trend-clothes__arrow">
+                                <a href="">SHOP NOW</a>
+                            </div>
+                        </article>
+                        <article class="trend-clothes__second-promo second-promo">
+                            <img src="images/main/2.jpg" alt="Image" class="second-promo__back">
+                            <div class="second-promo__text">
+                                <h6>Limited Stock</h6>
+                                <h3>Printed<br>T-Shirt</h3>
+                                <p>New Designs Every Week</p>
+                                <h4>UPTO 40% OFF</h4>
+                            </div>
+                            <div class="second-promo__link">
+                                <img src="images/main/arrow2.svg" alt="arrow" class="trend-clothes__arrow">
+                                <a href="">SHOP NOW</a>
+                            </div>
+                        </article>
+                        <article class="trend-clothes__third-promo third-promo">
+                            <img src="images/main/3.jpg" alt="Image" class="third-promo__back">
+                            <div class="third-promo__text">
+                                <h3>Cargo<br>Joggers</h3>
+                                <p>Move with style & comfort</p>
+                                <h4>UPTO 50% OFF</h4>
+                            </div>
+                            <div class="third-promo__link">
+                                <img src="images/main/arrow.svg" alt="arrow" class="trend-clothes__arrow">
+                                <a href="">SHOP NOW</a>
+                            </div>
+                        </article>
+                        <article class="trend-clothes__fourth-promo fourth-promo">
+                            <img src="images/main/4.jpg" alt="Image" class="fourth-promo__back">
+                            <div class="fourth-promo__text">
+                                <h3>Urban <br>Shirts</h3>
+                                <p>Live In Confort</p>
+                                <h4>FLAT 60% OFF</h4>
+                            </div>
+                            <div class="fourth-promo__link">
+                                <img src="images/main/arrow.svg" alt="arrow" class="trend-clothes__arrow">
+                                <a href="">SHOP NOW</a>
+                            </div>
+                        </article>
+                        <article class="trend-clothes__fifth-promo fifth-promo">
+                            <img src="images/main/5.jpg" alt="Image" class="fifth-promo__back">
+                            <div class="fifth-promo__text">
+                                <h3>Oversized <br>T-Shirts</h3>
+                                <p>Street Style Icon</p>
+                                <h4>FLAT 60% OFF</h4>
+                            </div> 
+                            <div class="fifth-promo__link">
+                                <img src="images/main/arrow.svg" alt="arrow" class="trend-clothes__arrow">
+                                <a href="">SHOP NOW</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="progress">
+                <div class="progress__container">
+                    <div class="progress__title">
+                        <h3>WE MADE YOUR EVERYDAY FASHION BETTER!</h3>
+                        <p>In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+                        <a href="#">Shop Now</a>
+                    </div>
+                    <div class="progress__image">
+                        <img src="images/main/Rectangle-13.jpeg" alt="">
+                    </div>
+                </div>
+            </section> -->
+            <section class="categories-men">
+                <div class="categories-men__container">
+                    <div class="categories-men__title">
+                        <h2>Categories For Men</h2>
+                    </div>
+                    <div class="categories-men__listing">
+                        <article class="categories-men__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/men1.jpg" alt="Men shirts">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Shirts</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-men__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/men2.jpg" alt="Men T-shirts">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Printed T-Shirts</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-men__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/men3.jpg" alt="Plain T-Shirt">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Plain T-Shirt</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-men__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/men4.jpg" alt="Polo T-Shirt">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Polo T-Shirt</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-men__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/men5.jpg" alt="Hoodies & Sweetshirt">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Hoodies & Sweetshirt</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-men__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/men6.jpg" alt="Jeans">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Jeans</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-men__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/men7.jpg" alt="Activewear">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Activewear</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-men__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/men8.jpg" alt="Boxers">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Boxers</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="categories-woman">
+                <div class="categories-woman__container">
+                    <div class="categories-woman__title">
+                        <h2>Categories For Women</h2>
+                    </div>
+                    <div class="categories-woman__listing">
+                        <article class="categories-woman__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/w1.jpeg" alt="Men shirts">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Hoodies & Sweetshirt</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-woman__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/w2.jpeg" alt="Men T-shirts">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Coats & Parkas</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-woman__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/w3.jpeg" alt="Plain T-Shirt">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Tees & T-Shirt</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                        <article class="categories-woman__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/w4.jpeg" alt="Polo T-Shirt">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Boxers</h4>
+                                    <p>Explore Now!</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <img src="images/main/arrow-1.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="brands-deal">
+                <div class="brands-deal__container">
+                    <div class="brands-deal__title">
+                        <h3>Top Brands Deal</h3>
+                        <p>Up To <span>60%</span> off on brands</p>
+                    </div>
+                    <div class="brands-deal__listing">
+                        <img src="images/main/nike.jpeg" alt="Image">
+                        <img src="images/main/hm.jpeg" alt="Image">
+                        <img src="images/main/levis.jpeg" alt="Image">
+                        <img src="images/main/polo.jpeg" alt="Image">
+                        <img src="images/main/puma.jpeg" alt="Image">
+                    </div>
+                </div>
+            </section>
+            <section class="acctual">
+                <div class="acctual__container">
+                    <div class="acctual__title">
+                        <h2>Categories For Women</h2>
+                    </div>
+                    <div class="acctual__listing">
+                        <article class="acctual__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/wm1.jpeg" alt="Men shirts">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Black Sweatshirt with ....</h4>
+                                    <p>Jhanvi’s  Brand</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <p>$123.00</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="acctual__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/wm2.jpeg" alt="Men T-shirts">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>line Pattern Black H...</h4>
+                                    <p>AS’s  Brand</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <p>$37.00</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="acctual__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/wm3.jpeg" alt="Plain T-Shirt">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Black Shorts</h4>
+                                    <p>MM’s  Brand</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <p>$37.00</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="acctual__item item-classification-clothing">
+                            <div class="item-classification-clothing__image">
+                                <img src="images/main/wm4.jpeg" alt="Polo T-Shirt">
+                            </div>
+                            <div class="item-classification-clothing__title">
+                                <div class="item-classification-clothing__text">
+                                    <h4>Levender Hoodie with ....</h4>
+                                    <p>Nike’s  Brand</p>
+                                </div>
+                                <div class="item-classification-clothing__arrow">
+                                    <p>$119.00</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>   
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="feedback__container">
+                    <div class="feedback__title">
+                        <h2>Feedback</h2>
+                    </div>
+                    <div class="feedback__content">
+                        <div class="feedback__review review">
+                            <div class="review__title">
+                                <div class="review__name">
+                                    <img src="images/main/r3.png" alt="Image">
+                                    <h4>Floyd Miles</h4>
+                                </div>
+                                <div class="review__stars">
+                                    <img src="images/main/star.png" alt="Image">
+                                </div>
+                            </div>
+                            <div class="review__text">
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>    
+                        </div>
+                        <div class="feedback__review review">
+                            <div class="review__title">
+                                <div class="review__name">
+                                    <img src="images/main/r2.png" alt="Image">
+                                    <h4>Floyd Miles</h4>
+                                </div>
+                                <div class="review__stars">
+                                    <img src="images/main/star.png" alt="Image">
+                                </div>
+                            </div>
+                            <div class="review__text">
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>    
+                        </div>
+                        <div class="feedback__review review">
+                            <div class="review__title">
+                                <div class="review__name">
+                                    <img src="images/main/r1.png" alt="Image">
+                                    <h4>Floyd Miles</h4>
+                                </div>
+                                <div class="review__stars">
+                                    <img src="images/main/star.png" alt="Image">
+                                </div>
+                            </div>
+                            <div class="review__text">
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </div>    
+                        </div>
+                    </div>   
+                </div>  
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__information">
+                    <article class="footer__help">
+                        <h4>Need Help</h4>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Track Order</a>
+                        <a href="#">Returns & Refunds</a>
+                        <a href="#">FAQ's</a>
+                        <a href="#">Career</a>
+                    </article>
+                    <article class="footer__company">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">euphoria Blog</a>
+                        <a href="#">euphoriastan</a>
+                        <a href="#">Collaboration</a>
+                        <a href="#">Media</a>
+                    </article>
+                    <article class="footer__more">
+                        <h4>More Info</h4>
+                        <a href="#">Term and Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Shipping Policy</a>
+                        <a href="#">Sitemap</a>
+                    </article>
+                    <article class="footer__location">
+                        <h4>Location</h4>
+                        <a href="#">support@euphoria.in</a>
+                        <a href="#">Eklingpura Chouraha, Ahmedabad Main Road</a>
+                        <a href="#">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a>
+                    </article>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__social">
+                        <img src="images/main/face.png" alt="Image">
+                        <img src="images/main/inst.png" alt="Image">
+                        <img src="images/main/twitter.png" alt="Image">
+                        <img src="images/main/in.png" alt="Image">
+                    </div>
+                    <article class="footer__apps">
+                        <h2>Download The App</h2>
+                        <a href="">
+                            <img src="images/main/play.png" alt="Image">
+                        </a>
+                        <a href="">
+                            <img src="images/main/apps.png" alt="Image">
+                        </a>
+                    </article>
+                </div>
+                <form class="footer__popular">
+                    <label for="select-option">Popular Categories</label>
+                    <select id="select-option" name="select-option">
+                        <option value="option1">4545345</option>
+                        <option value="option2">3453453</option>
+                        <option value="option3">45345345</option>
+                    </select>
+                </form>
+                <div class="footer__copyrigth">
+                    <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
