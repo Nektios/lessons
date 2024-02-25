@@ -72,6 +72,10 @@
   font-size: 0;
 }
 
+.squady__list > :not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .item-first, .item-second, .item-third, .item-fourth, .item-fifth, .item-sixth {
   font-size: 0;
   display: inline-block;
@@ -158,9 +162,6 @@
   display: block;
 }
 
-.squady__upper {
-  margin-bottom: 30px;
-}
 .squady__upper > :not(:last-child) {
   margin-right: 30px;
 }
