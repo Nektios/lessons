@@ -1,0 +1,292 @@
+.header {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.top-section-header {
+    position: sticky;
+}
+
+.upper-top-section-header {
+    background-color: $graphite-color;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        font-size: ToRem(14);
+        font-family: 'Inter', sans-serif;
+        color: white;
+    }
+    &__adress, &__email, &__links, &__working-hours, &__social-media  {
+        display: flex;
+        align-items: center;
+        gap: ToEm(10, 14);
+        img {
+            @include choose-adaptive('image-adaptive3', null, ToRem(17), ToRem(24));
+            object-position: center;
+            object-fit: contain;
+        }
+
+    }
+    &__location, &__links {
+        gap: ToEm(40, 14);
+        display: flex;
+        align-items: center;
+    }
+    @media screen and (max-width: ToEm(855)) {
+        display: none;
+    }
+}
+
+
+.lower-top-section-header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10px;
+        @media screen and (max-width: ToEm(460)) {
+            padding: 15px 10px;
+        }
+        @media screen and (max-height: ToEm(590)) {
+            padding: 15px 10px;
+        }
+    }
+    &__logo {
+        img {
+            @include choose-adaptive('image-adaptive3', null, ToRem(200), ToRem(40));
+            object-position: center;
+            object-fit: contain;
+        }
+    }
+}
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    font-size: ToRem(18);
+    gap: ToEm(40, 18);
+    &__listing {
+        display: flex;
+        gap: ToEm(20);
+        color: $graphite-color;
+        font-family: 'Inter', sans-serif;
+        li {
+            @media (any-hover: hover) {
+                &:hover {
+                    img {
+                        transform: rotate(180deg);
+                    }
+                    .navigation__item::after {
+                        width: 100%;
+                    }
+                }
+            }
+            img {
+                transition: 0.3s;
+            }
+        }
+        @media screen and (max-width: ToEm(1000)) {
+            display: none;
+        }
+    }
+    &__item {
+        &--triangle {
+            display: flex;
+            align-items: center;
+            column-gap: ToEm(5, 18);
+            transition: 0.3s;
+            position: relative;
+            ul {
+                display: none;
+                position: absolute;
+                border-radius: 0px 8px 8px 8px;
+                top: 20px;
+                background-color: rgb(207, 207, 207);
+                color: rgb(0, 0, 0);
+                transition: 0.3s;
+                li {
+                    padding: 10px 20px;
+                    &:not(:last-child) {
+                        border-bottom: 2px solid rgb(158, 158, 158);
+                    }
+                }
+            }
+            @media (any-hover: hover) {
+                &:hover ul {
+                    display: block;
+                }
+            }
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 0px;
+            height: ToEm(1.5, 18);
+            background-color: $graphite-color;
+            margin-top: ToEm(2, 18);
+            transition: 0.3s;
+        }
+    }
+    &__button {
+        color: white;
+        font-family: 'Cabin', sans-serif;
+        font-weight: 500;
+        font-size: inherit;
+        padding: ToEm(20, 18) ToEm(35, 18);
+        background-color: $blue-color;
+        transition: 0.3s;
+        cursor: pointer;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #4d56a5;
+            }
+        }
+        @media screen and (max-width: ToEm(1000)) {
+            display: none;
+        }
+    }
+    &__menu {
+        display: none;
+        & > :not(:last-child) {
+            margin-bottom: ToEm(4);
+        }
+        @media screen and (max-width: ToEm(1000)) {
+            display: block;
+        }
+    }
+    &__section {
+        width: 25px;
+        height: 3px;
+        background-color: $graphite-color;
+    }
+}
+
+
+.bottom-section-header {
+    background: url('../images/header/Image.jpeg') no-repeat right / cover;
+    &__title {
+        padding: ToEm(10) ToEm(120);
+        background-color: #37393fe8;
+        height: 100%;
+        max-width: ToRem(830);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & > :not(:last-child) {
+            margin-bottom: ToRem(35);
+        }
+        @media screen and (max-width: ToEm(670)) {
+            text-align: center;
+        }
+        @media screen and (max-width: ToEm(650)) {
+            padding: ToEm(10) ToEm(20);
+        }
+    }
+    &__text {
+        color: white;
+        & > :last-child {
+            margin-bottom: 0px;
+        }
+        h6 {
+            @extend %subtitle;
+            margin-bottom: ToEm(10, 18);
+            @media screen and (max-width: ToEm(670)) {
+                justify-content: center;
+            }
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: ToRem(60);
+            font-weight: 900;
+            margin-bottom: ToEm(30, 60);
+            span {
+                color: $green-color;
+            }
+            @media screen and (max-width: ToEm(670)) {
+                font-size: ToRem(45);
+            }
+            @media screen and (max-width: ToEm(460)) {
+                font-size: ToRem(30);
+            }
+            @media screen and (max-height: ToEm(590)) {
+                font-size: ToRem(30);
+            }
+        }
+        p {
+            font-size: ToRem(18);
+            font-family: 'Inter', sans-serif;
+            color: $grey-colorv2;
+            @media screen and (max-width: ToEm(460)) {
+                font-size: ToRem(14);
+            }
+        }
+    }
+    &__buttons {
+        font-size: ToRem(18);
+        display: flex;
+        gap: ToEm(30, 18);
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        flex-wrap: wrap;
+        @media screen and (max-width: ToEm(670)) {
+            justify-content: center;
+        }
+        & > :nth-child(1) {
+            background-color: $green-color;
+            padding: ToEm(20, 18) ToEm(30, 18);
+            font-size: inherit;
+            font-weight: inherit;
+            transition: 0.3s;
+            white-space: nowrap;
+            cursor: pointer;
+            &:hover {
+                background-color: #278a71;
+            }
+            @media screen and (max-width: ToEm(460)) {
+                padding: ToEm(10, 18) ToEm(20, 18);
+            }
+            @media screen and (max-height: ToEm(590)) {
+                padding: ToEm(10, 18) ToEm(20, 18);
+            }
+        }
+        & > :nth-child(2) {
+            display: flex;
+            align-items: center;
+            gap: ToEm(10, 18);
+            color: white;
+            img {
+                @include choose-adaptive('image-adaptive3', null, ToRem(60), ToRem(60));
+                display: block;
+                object-position: center;
+                object-fit: contain;
+                @media screen and (max-width: ToEm(460)) {
+                    @include choose-adaptive('image-adaptive3', null, ToRem(35), ToRem(35));
+                }
+                @media screen and (max-height: ToEm(590)) {
+                    @include choose-adaptive('image-adaptive3', null, ToRem(35), ToRem(35));
+                }
+            }
+            span {
+                display: block;
+                white-space: nowrap;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: ToRem(1.5, 18);
+                    background-color: white;
+                    transition: 0.3s;
+                }
+                @media (any-hover: hover) {
+                    &:hover::after {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

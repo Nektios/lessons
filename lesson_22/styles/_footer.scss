@@ -1,0 +1,153 @@
+.footer {
+    background-color: $graphite-color;
+    color:  white;;
+    padding: ToEm(95) 0;
+    &__container {
+        display: grid;
+        gap: ToEm(50);
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: ToEm(20);
+        padding-bottom: ToEm(50);
+        border-bottom: 1px solid white;
+        @media screen and (max-width: ToEm(1090)) {
+            justify-content: center;
+        }
+    }
+    &__links {
+        display: flex;
+        gap: ToEm(60);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__call, &__location, &__mail {
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, auto);
+        column-gap: ToEm(10);
+        row-gap: ToEm(8);
+        img {
+            grid-area: 1 / 1 / span 2 / 1;
+        }
+        h6 {
+            align-self: flex-end;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: ToRem(20);
+        }
+        a {
+            font-size: ToRem(18);
+            font-family: 'Inter', sans-serif;
+        }
+    }
+
+    &__copyrigth {
+        display: flex;
+        flex-wrap: wrap;
+        gap: ToEm(10);
+        justify-content: space-between;
+        font-family: 'Inter', sans-serif;
+        font-size: ToRem(18);
+        font-weight: 300;
+        .footer__copyrigth--green {
+            color: $green-color;
+        }
+        .footer__copyrigth--blue {
+            color: $blue-color;
+        }
+    }
+    &__img {
+        display: flex;
+        gap: ToEm(12);
+    }
+}
+.navigation-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: ToEm(30);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h6 {
+        @extend %subtitle;
+        color: $green-color;
+        font-size: ToRem(20);
+        &::before {
+            background-color: $blue-color;
+        }
+        margin-bottom: ToEm(20, 20);
+    }
+    li {
+        font-family: "Inter", sans-serif;
+        font-size: ToRem(18);
+        font-weight: 300;
+        a {
+            display: inline-block;
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1.5px;
+                background-color: white;
+                transition: 0.3s;
+            }
+            @media (any-hover: hover) {
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: ToEm(20, 18);
+        }
+    }
+    &__quick {
+        flex: 1 1 auto;
+    }
+    &__form {
+        padding: ToEm(42) ToEm(36);
+        background-color: #474950;
+        flex: 1 1 auto;
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: ToRem(18);
+            font-weight: 600;
+            margin-bottom: ToEm(10, 18);
+        }
+        p {
+            font-family: "Inter", sans-serif;
+            font-size: ToRem(18);
+            font-weight: 300;
+            margin-bottom: ToEm(20, 18);
+        }
+        & > :last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__input {
+        display: flex;
+        input {
+            flex: 1 0 auto;
+            background-color: white;
+            padding: ToEm(22) ToEm(27);
+            @media screen and(max-width: ToEm(540)) {
+                padding: ToEm(10) ToEm(10);
+            }
+        }
+        button {
+            flex: 0 0 auto;
+            background-color: $blue-color;
+            padding: ToEm(22) ToEm(27);
+            font-family: 'Inter', sans-serif;
+            font-size: ToRem(18);
+            font-weight: 500;
+            color: white;
+            @media screen and(max-width: ToEm(540)) {
+                padding: ToEm(10) ToEm(10);
+                font-size: ToRem(16);
+            }
+        }
+    }
+}

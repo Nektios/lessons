@@ -1,0 +1,103 @@
+// mixins
+@use "sass:math";
+
+@function ToRem($num1, $num2: 16) {
+    $rez: math.div($num1, $num2) + rem;
+    @return $rez;
+}
+
+@function ToEm($num1, $num2: 16) {
+    $rez: math.div($num1, $num2) + em;
+    @return $rez;
+}
+
+
+
+@function percent($num1, $num2) {
+    $rez: math.div($num1, $num2) * 100%;
+    @return $rez;
+}
+
+@mixin choose-adaptive ($image-adaptive, $value-aspect: null, $value-wd: null, $value-hd: null) {
+    @if $image-adaptive == 'image-adaptive1' {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @if $value-aspect != null {
+            aspect-ratio: unquote($value-aspect);
+        }
+    } @else if $image-adaptive == 'image-adaptive2' {
+        max-width: 100%;
+        display: block;
+    } @else  if $image-adaptive == 'image-adaptive3' {
+        display: block;
+        object-fit: cover;
+        @if $value-wd != null {
+            width: $value-wd;
+        }
+        @if $value-hd != null {
+            height: $value-hd;
+        }
+    }
+}
+//------
+
+//variables and Inheritance
+
+$green-color: #40DDB6;
+$green2-color: #208068;
+$blue-color: #6B78E5;
+$graphite-color: #37393F;
+$grey-color: #7D7D7D;
+$grey-colorv2: #B9B9B9;
+$light-grey-color: #F4F4F4;
+
+%subtitle {
+    font-size: ToRem(18);
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    &::before {
+        content: '';
+        width: ToRem(12);
+        height: ToRem(12);
+        background-color: $green-color;
+    }
+}
+%h2-title {
+    font-size: ToRem(40);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: $graphite-color;
+}
+
+//---------
+
+//general styles
+
+[class*="__container"] {
+    max-width: ToRem(1220);
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+#wapper {
+    display: flex;
+    overflow: clip;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+//--------------
+
+//connection of site sections
+
+@import 'reset';
+@import 'fonts';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+//---------------------------
