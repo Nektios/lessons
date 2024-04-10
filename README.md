@@ -1,2 +1,3 @@
-<img src="https://camo.githubusercontent.com/fb26e87e3440d99f1b444df881f816af5194a9226664834bb81c8293741c093c/68747470733a2f2f692e696d6775722e636f6d2f6f334c685361632e6a7067">
-<h1>Hello</h1>
+#Lessons
+
+Just homework from the course, nothing unusual
